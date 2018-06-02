@@ -14,7 +14,7 @@ var Exit = {
         this.dialoge.scale.setTo(1.7)
         this.text1 = game.add.text(75, 40, '* Вы выбрались...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         game.input.onDown.add(this.clicked, this);
-        this.background = game.add.sprite(0, 225, 'bg');
+        this.background = game.add.sprite(-1, 225, 'bg');
         this.background.scale.setTo(1.35)
     },
     update: function() {

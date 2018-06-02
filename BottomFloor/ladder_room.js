@@ -58,17 +58,15 @@ var Ladder = {
         Ladder.text1 = game.add.text(75, 40, '* Похоже, что за этой дверью просто выход... Погодите,', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Ladder.text2 = game.add.text(75, 80, 'это же то, что вам нужно: Найти выход! Значит ли, что...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Ladder.text3 = game.add.text(75, 150, '*** Конец игры ***', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-        game.input.onDown.add(Ladder.locked2, this);
+        Ladder.dialoge.inputEnabled = true;
+        Ladder.dialoge.events.onInputDown.add(Ladder.clicked);
+        Ladder.dialoge.events.onInputDown.add(Ladder.locked2);
     },
-    locked1:function(){
+    clicked:function(){
         Ladder.dialoge.kill();
         Ladder.text1.kill();
         Ladder.text2.kill();
         Ladder.text3.kill();
-        Ladder.dialoge = game.add.sprite(0, -300, 'dialoge');
-        Ladder.dialoge.scale.setTo(1.7)
-        Ladder.text1 = game.add.text(75, 40, '* Ладно, шутки в сторону... Найдите ключ.', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-        game.input.onDown.add(Ladder.locked2, this);
     },
     locked2:function(){
         Ladder.dialoge.kill();

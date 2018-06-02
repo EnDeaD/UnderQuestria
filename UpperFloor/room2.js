@@ -102,13 +102,17 @@ var Room2 = {
         }
     },
     update: function () {
-
+        
     },
     nextRoom:function(){
         game.state.start('room3');
     },
     backRoom:function(){
-        game.state.start('room1');
+        Room2.dialoge = game.add.sprite(0, -400, 'dialoge');
+        Room2.dialoge.scale.setTo(1.7)
+        Room2.text1 = game.add.text(75, 40, '* Вам незачем возвращаться туда...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room2.dialoge.inputEnabled = true;
+        Room2.dialoge.events.onInputDown.add(Room2.delete);
     },
     locked: function () {
         Room2.dialoge = game.add.sprite(0, -400, 'dialoge');
