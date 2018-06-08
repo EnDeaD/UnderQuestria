@@ -60,7 +60,11 @@ var Room3 = {
         game.state.start('room4');
     },
     backRoom:function(){
-        game.state.start('room2');
+        Room3.dialoge = game.add.sprite(0, -400, 'dialoge');
+        Room3.dialoge.scale.setTo(1.7)
+        Room3.text1 = game.add.text(75, 40, '* Вам незачем возвращаться туда...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room3.dialoge.inputEnabled = true;
+        Room3.dialoge.events.onInputDown.add(Room3.clicked);
     },
     secondRoom:function(){
         Room3.dialoge1 = game.add.sprite(0, -400, 'dialoge');
