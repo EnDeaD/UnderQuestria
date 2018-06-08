@@ -64,7 +64,7 @@ var Room3 = {
         Room3.dialoge.scale.setTo(1.7)
         Room3.text1 = game.add.text(75, 40, '* Вам незачем возвращаться туда...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room3.dialoge.inputEnabled = true;
-        Room3.dialoge.events.onInputDown.add(Room3.clicked);
+        Room3.dialoge.events.onInputDown.add(Room3.delete);
     },
     secondRoom:function(){
         Room3.dialoge1 = game.add.sprite(0, -400, 'dialoge');
