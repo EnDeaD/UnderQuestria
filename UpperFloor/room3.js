@@ -90,9 +90,9 @@ var Room3 = {
         game.state.start('ladder');
     },
     delete:function(){
-        Room2.dialoge.kill();
-        Room2.text1.kill();
-        Room2.dialoge.kill();
-        Room2.text1.kill();
+        Room3.dialoge.kill();
+        Room3.text1.kill();
+        Room3.dialoge.kill();
+        Room3.text1.kill();
     },
 }
