@@ -88,5 +88,11 @@ var Room3 = {
     },
     changeFloor:function(){
         game.state.start('ladder');
-    }
+    },
+    delete:function(){
+        Room2.dialoge.kill();
+        Room2.text1.kill();
+        Room2.dialoge.kill();
+        Room2.text1.kill();
+    },
 }
