@@ -14,30 +14,30 @@
 	</style>
 </head>
 <body>
-		<script type="text/javascript" src="Logs/phaser.min.js"></script>
-		<script type="text/javascript" src="Logs/menu.js"></script>
-		<script type="text/javascript" src="Logs/start.js"></script>
-		<script type="text/javascript" src="Logs/words.js"></script>
-		<script type="text/javascript" src="Logs/info.js"></script>
-		<script type="text/javascript" src="Logs/more_info.js"></script>
-		<script type="text/javascript" src="Logs/about.js"></script>
-		<script type="text/javascript" src="Logs/theend.js"></script>
-		<script type="text/javascript" src="UpperFloor/room1.js"></script>
-		<script type="text/javascript" src="UpperFloor/room2.js"></script>
-		<script type="text/javascript" src="UpperFloor/room3.js"></script>
-		<script type="text/javascript" src="UpperFloor/room4.js"></script>
-		<script type="text/javascript" src="BottomFloor/kitchen_room.js"></script>
-		<script type="text/javascript" src="BottomFloor/living_room.js"></script>
-		<script type="text/javascript" src="BottomFloor/ladder_room.js"></script>
-		<script type="text/javascript" src="BottomFloor/hall_room.js"></script>
-		<script type="text/javascript" src="BottomFloor/exit_room.js"></script>
-		<script type="text/javascript" src="BottomFloor/small_room.js"></script>
-		<script type="text/javascript" src="BottomFloor/big_room.js"></script>
-		<script>
-			var game = new Phaser.Game(800, 600, Phaser.AUTO, '', {
-		    preload: preload,
-		    create: create,
-		    update: update
+	<script type="text/javascript" src="Logs/phaser.min.js"></script>
+	<script type="text/javascript" src="Logs/menu.js"></script>
+	<script type="text/javascript" src="Logs/start.js"></script>
+	<script type="text/javascript" src="Logs/words.js"></script>
+	<script type="text/javascript" src="Logs/info.js"></script>
+	<script type="text/javascript" src="Logs/more_info.js"></script>
+	<script type="text/javascript" src="Logs/about.js"></script>
+	<script type="text/javascript" src="Logs/theend.js"></script>
+	<script type="text/javascript" src="UpperFloor/room1.js"></script>
+	<script type="text/javascript" src="UpperFloor/room2.js"></script>
+	<script type="text/javascript" src="UpperFloor/room3.js"></script>	
+	<script type="text/javascript" src="UpperFloor/room4.js"></script>
+	<script type="text/javascript" src="BottomFloor/kitchen_room.js"></script>
+	<script type="text/javascript" src="BottomFloor/living_room.js"></script>
+	<script type="text/javascript" src="BottomFloor/ladder_room.js"></script>
+	<script type="text/javascript" src="BottomFloor/hall_room.js"></script>
+	<script type="text/javascript" src="BottomFloor/exit_room.js"></script>
+	<script type="text/javascript" src="BottomFloor/small_room.js"></script>
+	<script type="text/javascript" src="BottomFloor/big_room.js"></script>
+	<script>
+		var game = new Phaser.Game(800, 600, Phaser.AUTO, '', {
+			preload: preload,
+			create: create,
+			update: update
 		});
 		var room1un = false;
 		var room2un = false;
@@ -47,11 +47,7 @@
 		var floor1un = false;
 		var dialog = true;
 		var free = true;
-
-		function preload(){
-
-		}
-
+		function preload(){}
 		function create(){
 		    game.state.add("menu", Menu)
 		    game.state.add("start", Start)
@@ -73,10 +69,7 @@
 		    game.state.add("theend", TheEnd)
 		    game.state.start("menu")
 		}
-
-		function update(){
-
-		}
-		</script>
+		function update(){}
+	</script>
 </body>
 </html>
