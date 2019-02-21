@@ -25,22 +25,22 @@ var Menu = {
         
         this.word = game.add.sprite(10, 530, 'btn1');
         this.word.inputEnabled = true;
-        this.word.scale.setTo(0.1)
+        this.word.scale.setTo(00.1)
         this.word.events.onInputDown.add(this.words);
 
         this.inf = game.add.sprite(730, 530, 'btn2');
         this.inf.inputEnabled = true;
-        this.inf.scale.setTo(0.1)
+        this.inf.scale.setTo(0.01)
         this.inf.events.onInputDown.add(this.info);
 
         this.mor = game.add.sprite(730, 10, 'btn3');
         this.mor.inputEnabled = true;
-        this.mor.scale.setTo(0.1)
+        this.mor.scale.setTo(0.01)
         this.mor.events.onInputDown.add(this.more);
 
         this.and = game.add.sprite(10, 10, 'btn0');
         this.and.inputEnabled = true;
-        this.and.scale.setTo(0.1)
+        this.and.scale.setTo(0.01)
         this.and.events.onInputDown.add(this.about);
     },
     update: function () {
