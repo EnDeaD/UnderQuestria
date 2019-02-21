@@ -19,7 +19,7 @@ var Menu = {
         this.name = game.add.sprite(75, 30, 'name');
         this.name.scale.setTo(0.6)
         
-        this.btn = game.add.sprite(280, 300, 'july');
+        this.btn = game.add.sprite(270, 300, 'july');
         this.btn.inputEnabled = false;
         this.btn.scale.setTo(0.5, 0.5)
         this.btn.events.onInputDown.add(this.easterEgg);
