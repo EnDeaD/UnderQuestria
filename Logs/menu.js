@@ -4,6 +4,7 @@ var Menu = {
         game.load.image('btn1', 'assets/night.png');
         game.load.image('btn2', 'assets/sun.png');
         game.load.image('btn3', 'assets/twi.png');
+        game.load.image('btn3', 'triggers/btn.png');
         game.load.image('bg', 'assets/menu.png');
         game.load.image('name', 'assets/game_name.png');
     },
@@ -17,7 +18,7 @@ var Menu = {
         this.name = game.add.sprite(140, 30, 'name');
         this.name.scale.setTo(0.6)
         
-        this.btn = game.add.sprite(340, 275, 'btn0');
+        this.btn = game.add.sprite(340, 275, 'btn');
         this.btn.inputEnabled = true;
         this.btn.scale.setTo(0.355, 0.125)
         this.btn.events.onInputDown.add(this.startGame);
@@ -37,7 +38,7 @@ var Menu = {
         this.mor.scale.setTo(0.2)
         this.mor.events.onInputDown.add(this.more);
 
-        this.and = game.add.sprite(10, 10, 'btn');
+        this.and = game.add.sprite(10, 10, 'btn0');
         this.and.inputEnabled = true;
         this.and.scale.setTo(0.2)
         this.and.events.onInputDown.add(this.about);
