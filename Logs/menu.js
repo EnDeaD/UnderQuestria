@@ -24,9 +24,9 @@ var Menu = {
         this.btn.scale.setTo(0.355, 0.125)
         this.btn.events.onInputDown.add(this.startGame);
         
-        this.btn = game.add.sprite(300, 375, 'july');
-        this.btn.inputEnabled = true;
-        this.btn.scale.setTo(1, 1)
+        this.btn = game.add.sprite(300, 300, 'july');
+        this.btn.inputEnabled = false;
+        this.btn.scale.setTo(0.5, 0.5)
         this.btn.events.onInputDown.add(this.easterEgg);
         
         this.word = game.add.sprite(10, 500, 'twil');
