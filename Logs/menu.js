@@ -30,10 +30,10 @@ var Menu = {
 
         this.inf = game.add.sprite(730, 530, 'btn2');
         this.inf.inputEnabled = true;
-        this.inf.scale.setTo(0.09)
+        this.inf.scale.setTo(0.05)
         this.inf.events.onInputDown.add(this.info);
 
-        this.mor = game.add.sprite(730, 10, 'btn3');
+        this.mor = game.add.sprite(700, 10, 'btn3');
         this.mor.inputEnabled = true;
         this.mor.scale.setTo(0.09)
         this.mor.events.onInputDown.add(this.more);
