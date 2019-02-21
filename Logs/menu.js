@@ -4,7 +4,7 @@ var Menu = {
         game.load.image('luna', 'assets/night.png');
         game.load.image('cele', 'assets/sun.png');
         game.load.image('twil', 'assets/twi.png');
-        game.load.image('btn', 'triggers/btn.png');
+        game.load.image('btn', 'triggers/trigger.png');
         game.load.image('bg', 'assets/menu.png');
         game.load.image('name', 'assets/game_name.png');
     },
@@ -23,14 +23,14 @@ var Menu = {
         this.btn.scale.setTo(0.355, 0.125)
         this.btn.events.onInputDown.add(this.startGame);
         
-        this.word = game.add.sprite(10, 530, 'twil');
+        this.word = game.add.sprite(10, 500, 'twil');
         this.word.inputEnabled = true;
         this.word.scale.setTo(0.09)
         this.word.events.onInputDown.add(this.words);
 
         this.inf = game.add.sprite(710, 510, 'cade');
         this.inf.inputEnabled = true;
-        this.inf.scale.setTo(0.05)
+        this.inf.scale.setTo(0.09)
         this.inf.events.onInputDown.add(this.info);
 
         this.mor = game.add.sprite(700, 110, 'luna');
@@ -40,7 +40,7 @@ var Menu = {
 
         this.and = game.add.sprite(10, 110, 'cele');
         this.and.inputEnabled = true;
-        this.and.scale.setTo(0.09)
+        this.and.scale.setTo(0.05)
         this.and.events.onInputDown.add(this.about);
     },
     update: function () {
