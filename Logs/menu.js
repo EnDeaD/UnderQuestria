@@ -15,7 +15,7 @@ var Menu = {
         game.stage.backgroundColor = "#000";
         this.background = game.add.sprite(0, 0, 'bg');
         this.background.scale.setTo(1.25, 1.25)
-        this.name = game.add.sprite(140, 30, 'name');
+        this.name = game.add.sprite(100, 30, 'name');
         this.name.scale.setTo(0.6)
         
         this.btn = game.add.sprite(340, 275, 'btn');
