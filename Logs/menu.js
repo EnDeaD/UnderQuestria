@@ -4,6 +4,7 @@ var Menu = {
         game.load.image('luna', 'assets/night.png');
         game.load.image('cele', 'assets/sun.png');
         game.load.image('twil', 'assets/twi.png');
+        game.load.image('july', 'assets/menu_pony.png');
         game.load.image('btn', 'triggers/trigger.png');
         game.load.image('bg', 'assets/menu.png');
         game.load.image('name', 'assets/game_name.png');
@@ -15,13 +16,18 @@ var Menu = {
         game.stage.backgroundColor = "#000";
         this.background = game.add.sprite(0, 0, 'bg');
         this.background.scale.setTo(1.25, 1.25)
-        this.name = game.add.sprite(50, 30, 'name');
+        this.name = game.add.sprite(75, 30, 'name');
         this.name.scale.setTo(0.6)
         
         this.btn = game.add.sprite(340, 275, 'btn');
         this.btn.inputEnabled = true;
         this.btn.scale.setTo(0.355, 0.125)
         this.btn.events.onInputDown.add(this.startGame);
+        
+        this.btn = game.add.sprite(300, 375, 'july');
+        this.btn.inputEnabled = true;
+        this.btn.scale.setTo(1, 1)
+        this.btn.events.onInputDown.add(this.easterEgg);
         
         this.word = game.add.sprite(10, 500, 'twil');
         this.word.inputEnabled = true;
@@ -61,4 +67,7 @@ var Menu = {
     about:function(){
         game.state.start('about');
     },
+    easterEgg:function(){
+        game.state.start('start');
+    }
 }
