@@ -19,15 +19,15 @@ var Menu = {
         this.name = game.add.sprite(75, 30, 'name');
         this.name.scale.setTo(0.6)
         
+        this.btn = game.add.sprite(280, 300, 'july');
+        this.btn.inputEnabled = false;
+        this.btn.scale.setTo(0.5, 0.5)
+        this.btn.events.onInputDown.add(this.easterEgg);
+
         this.btn = game.add.sprite(340, 275, 'btn');
         this.btn.inputEnabled = true;
         this.btn.scale.setTo(0.355, 0.125)
         this.btn.events.onInputDown.add(this.startGame);
-        
-        this.btn = game.add.sprite(300, 300, 'july');
-        this.btn.inputEnabled = false;
-        this.btn.scale.setTo(0.5, 0.5)
-        this.btn.events.onInputDown.add(this.easterEgg);
         
         this.word = game.add.sprite(10, 500, 'twil');
         this.word.inputEnabled = true;
