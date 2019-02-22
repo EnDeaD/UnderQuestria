@@ -11,6 +11,7 @@ var Menu = {
         game.load.image('name', 'assets/game_name.png');
     },
     btn: null,
+    ebtn: null,
     background: null,
     name: null,
     create: function () {
@@ -20,10 +21,10 @@ var Menu = {
         this.name = game.add.sprite(75, 30, 'name');
         this.name.scale.setTo(0.6)
         
-        this.btn = game.add.sprite(273, 300, 'july');
-        this.btn.inputEnabled = true;
-        this.btn.scale.setTo(0.5, 0.5)
-        this.btn.events.onInputDown.add(this.easterEgg);
+        this.ebtn = game.add.sprite(273, 300, 'july');
+        this.ebtn.inputEnabled = true;
+        this.ebtn.scale.setTo(0.5, 0.5)
+        this.ebtn.events.onInputDown.add(this.easterEgg);
 
         this.btn = game.add.sprite(340, 275, 'btn');
         this.btn.inputEnabled = true;
@@ -69,8 +70,9 @@ var Menu = {
         game.state.start('about');
     },
     easterEgg:function(){
-        this.btn = game.add.sprite(273, 300, 'boop');
-        this.btn.inputEnabled = true;
-        this.btn.scale.setTo(0.5, 0.5)
+        Menu.ebtn.kill();
+        this.ebtn = game.add.sprite(273, 300, 'boop');
+        this.ebtn.inputEnabled = true;
+        this.ebtn.scale.setTo(0.5, 0.5)
     }
 }
