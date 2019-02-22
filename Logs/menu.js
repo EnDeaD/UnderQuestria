@@ -21,7 +21,7 @@ var Menu = {
         this.name.scale.setTo(0.6)
         
         this.btn = game.add.sprite(273, 300, 'july');
-        this.btn.inputEnabled = false;
+        this.btn.inputEnabled = true;
         this.btn.scale.setTo(0.5, 0.5)
         this.btn.events.onInputDown.add(this.easterEgg);
 
@@ -70,7 +70,7 @@ var Menu = {
     },
     easterEgg:function(){
         this.btn = game.add.sprite(273, 300, 'boop');
-        this.btn.inputEnabled = false;
+        this.btn.inputEnabled = true;
         this.btn.scale.setTo(0.5, 0.5)
     }
 }
