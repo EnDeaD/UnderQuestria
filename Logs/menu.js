@@ -34,7 +34,7 @@ var Menu = {
         this.word.scale.setTo(0.09, 0.07)
         this.word.events.onInputDown.add(this.words);
 
-        this.inf = game.add.sprite(710, 530, 'cade');
+        this.inf = game.add.sprite(710, 540, 'cade');
         this.inf.inputEnabled = true;
         this.inf.scale.setTo(0.09)
         this.inf.events.onInputDown.add(this.info);
