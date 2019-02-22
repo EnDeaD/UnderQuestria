@@ -19,7 +19,7 @@ var Menu = {
         this.name = game.add.sprite(75, 30, 'name');
         this.name.scale.setTo(0.6)
         
-        this.btn = game.add.sprite(270, 300, 'july');
+        this.btn = game.add.sprite(273, 300, 'july');
         this.btn.inputEnabled = false;
         this.btn.scale.setTo(0.5, 0.5)
         this.btn.events.onInputDown.add(this.easterEgg);
@@ -29,7 +29,7 @@ var Menu = {
         this.btn.scale.setTo(0.355, 0.125)
         this.btn.events.onInputDown.add(this.startGame);
         
-        this.word = game.add.sprite(10, 500, 'twil');
+        this.word = game.add.sprite(10, 510, 'twil');
         this.word.inputEnabled = true;
         this.word.scale.setTo(0.09, 0.07)
         this.word.events.onInputDown.add(this.words);
