@@ -69,7 +69,7 @@ var Menu = {
         game.state.start('about');
     },
     easterEgg:function(){
-        this.btn = game.add.sprite(273, 300, 'july');
+        this.btn = game.add.sprite(273, 300, 'boop');
         this.btn.inputEnabled = false;
         this.btn.scale.setTo(0.5, 0.5)
     }
