@@ -6,7 +6,7 @@ var Menu = {
         game.load.image('twil', 'assets/twi.png');
         game.load.image('july', 'assets/menu_pony.png');
         game.load.image('boop', 'assets/booped.png');
-        game.load.image('btn', 'triggers/trigger.png');
+        game.load.image('btn', 'triggers/test_trigger.png');
         game.load.image('bg', 'assets/menu.png');
         game.load.image('name', 'assets/game_name.png');
     },
