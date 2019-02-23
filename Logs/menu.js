@@ -18,48 +18,48 @@ var Menu = {
     create: function () {
         game.stage.backgroundColor = "#000";
         this.background = game.add.sprite(0, 0, 'bg');
-        this.background.scale.setTo(1.25, 1.25)
+        this.background.scale.setTo(1.25, 1.25);
         this.name = game.add.sprite(75, 30, 'name');
-        this.name.scale.setTo(0.6)
+        this.name.scale.setTo(0.6);
         
         this.ebtn = game.add.sprite(273, 300, 'july');
         this.ebtn.inputEnabled = true;
-        this.ebtn.scale.setTo(0.5, 0.5)
+        this.ebtn.scale.setTo(0.5, 0.5);
         this.ebtn.events.onInputDown.add(this.easterEgg);
 
         this.btn = game.add.sprite(340, 275, 'btn');
         this.btn.inputEnabled = true;
-        this.btn.scale.setTo(0.355, 0.125)
+        this.btn.scale.setTo(0.355, 0.125);
         this.btn.events.onInputDown.add(this.startGame);
         
         this.text = game.add.sprite(175, 200, 'btn');
         this.text.inputEnabled = true;
-        this.text.scale.setTo(1, 0.1)
+        this.text.scale.setTo(1, 0.1);
         this.text = game.add.sprite(350, 160, 'btn');
         this.text.inputEnabled = true;
-        this.text.scale.setTo(0.2, 0.1)
+        this.text.scale.setTo(0.2, 0.1);
         this.text = game.add.sprite(550, 160, 'btn');
         this.text.inputEnabled = true;
-        this.text.scale.setTo(0.2, 0.1)
+        this.text.scale.setTo(0.2, 0.1);
         
         this.word = game.add.sprite(10, 530, 'twil');
         this.word.inputEnabled = true;
-        this.word.scale.setTo(0.09, 0.07)
+        this.word.scale.setTo(0.09, 0.07);
         this.word.events.onInputDown.add(this.words);
 
         this.inf = game.add.sprite(710, 540, 'cade');
         this.inf.inputEnabled = true;
-        this.inf.scale.setTo(0.09)
+        this.inf.scale.setTo(0.09);
         this.inf.events.onInputDown.add(this.info);
 
         this.mor = game.add.sprite(700, 110, 'luna');
         this.mor.inputEnabled = true;
-        this.mor.scale.setTo(0.09)
+        this.mor.scale.setTo(0.09);
         this.mor.events.onInputDown.add(this.more);
 
         this.and = game.add.sprite(10, 110, 'cele');
         this.and.inputEnabled = true;
-        this.and.scale.setTo(0.05)
+        this.and.scale.setTo(0.05);
         this.and.events.onInputDown.add(this.about);
     },
     update: function () {
@@ -84,6 +84,6 @@ var Menu = {
         Menu.ebtn.kill();
         this.ebtn = game.add.sprite(273, 300, 'boop');
         this.ebtn.inputEnabled = true;
-        this.ebtn.scale.setTo(0.5, 0.5)
-    }
+        this.ebtn.scale.setTo(0.5, 0.5);
+    },
 }
