@@ -14,7 +14,7 @@ var Menu = {
     ebtn: null,
     text: null,
     background: null,
-    name: null;
+    name: null,
     create: function () {
         game.stage.backgroundColor = "#000";
         this.background = game.add.sprite(0, 0, 'bg');
