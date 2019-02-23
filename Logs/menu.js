@@ -29,7 +29,7 @@ var Menu = {
 
         this.btn = game.add.sprite(340, 275, 'btn');
         this.btn.inputEnabled = true;
-        this.btn.scale.setTo(0.355, 0.125);
+        this.btn.scale.setTo(0.333, 0.1);
         this.btn.events.onInputDown.add(this.startGame);
         
         this.text = game.add.sprite(200, 575, 'btn');
