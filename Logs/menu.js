@@ -12,8 +12,9 @@ var Menu = {
     },
     btn: null,
     ebtn: null,
+    text: null,
     background: null,
-    name: null,
+    name: null;
     create: function () {
         game.stage.backgroundColor = "#000";
         this.background = game.add.sprite(0, 0, 'bg');
@@ -31,15 +32,15 @@ var Menu = {
         this.btn.scale.setTo(0.355, 0.125)
         this.btn.events.onInputDown.add(this.startGame);
         
-        this.btn = game.add.sprite(175, 200, 'btn');
-        this.btn.inputEnabled = true;
-        this.btn.scale.setTo(1, 0.1)
-        this.btn = game.add.sprite(350, 160, 'btn');
-        this.btn.inputEnabled = true;
-        this.btn.scale.setTo(0.2, 0.1)
-        this.btn = game.add.sprite(450, 160, 'btn');
-        this.btn.inputEnabled = true;
-        this.btn.scale.setTo(0.2, 0.1)
+        this.text = game.add.sprite(175, 200, 'btn');
+        this.text.inputEnabled = true;
+        this.text.scale.setTo(1, 0.1)
+        this.text = game.add.sprite(350, 160, 'btn');
+        this.text.inputEnabled = true;
+        this.text.scale.setTo(0.2, 0.1)
+        this.text = game.add.sprite(550, 160, 'btn');
+        this.text.inputEnabled = true;
+        this.text.scale.setTo(0.2, 0.1)
         
         this.word = game.add.sprite(10, 530, 'twil');
         this.word.inputEnabled = true;
