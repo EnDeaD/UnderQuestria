@@ -19,7 +19,7 @@ var Menu = {
         game.stage.backgroundColor = "#000";
         this.background = game.add.sprite(0, 0, 'bg');
         this.background.scale.setTo(1.25, 1.25);
-        this.name = game.add.sprite(75, 30, 'name');
+        this.name = game.add.sprite(100, 30, 'name');
         this.name.scale.setTo(0.5);
         
         this.ebtn = game.add.sprite(273, 300, 'july');
@@ -27,7 +27,7 @@ var Menu = {
         this.ebtn.scale.setTo(0.5, 0.5);
         this.ebtn.events.onInputDown.add(this.easterEgg);
 
-        this.btn = game.add.sprite(340, 275, 'btn');
+        this.btn = game.add.sprite(350, 275, 'btn');
         this.btn.inputEnabled = true;
         this.btn.scale.setTo(0.333, 0.1);
         this.btn.events.onInputDown.add(this.startGame);
@@ -40,13 +40,13 @@ var Menu = {
         this.text.scale.setTo(1.33, 0.1);
         this.text = game.add.sprite(200, 150, 'btn');
         this.text.inputEnabled = true;
-        this.text.scale.setTo(0.2, 0.1);
-        this.text = game.add.sprite(350, 150, 'btn');
+        this.text.scale.setTo(0.4, 0.1);
+        this.text = game.add.sprite(375, 150, 'btn');
         this.text.inputEnabled = true;
         this.text.scale.setTo(0.2, 0.1);
         this.text = game.add.sprite(500, 150, 'btn');
         this.text.inputEnabled = true;
-        this.text.scale.setTo(0.2, 0.1);
+        this.text.scale.setTo(0.4, 0.1);
         
         this.word = game.add.sprite(10, 530, 'twil');
         this.word.inputEnabled = true;
