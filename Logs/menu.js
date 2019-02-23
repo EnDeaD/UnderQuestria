@@ -31,6 +31,15 @@ var Menu = {
         this.btn.scale.setTo(0.355, 0.125)
         this.btn.events.onInputDown.add(this.startGame);
         
+        this.btn = game.add.sprite(140, 175, 'btn');
+        this.btn.inputEnabled = true;
+        this.btn.scale.setTo(0.5, 0.1)
+        this.btn.events.onInputDown.add(this.startGame);
+        this.btn = game.add.sprite(350, 150, 'btn');
+        this.btn.inputEnabled = true;
+        this.btn.scale.setTo(0.25, 0.1)
+        this.btn.events.onInputDown.add(this.startGame);
+        
         this.word = game.add.sprite(10, 530, 'twil');
         this.word.inputEnabled = true;
         this.word.scale.setTo(0.09, 0.07)
