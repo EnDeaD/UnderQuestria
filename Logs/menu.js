@@ -34,6 +34,9 @@ var Menu = {
         
         this.text = game.add.sprite(175, 200, 'btn');
         this.text.inputEnabled = true;
+        this.text.scale.setTo(1.25, 0.5);
+        this.text = game.add.sprite(175, 500, 'btn');
+        this.text.inputEnabled = true;
         this.text.scale.setTo(1, 0.1);
         this.text = game.add.sprite(350, 160, 'btn');
         this.text.inputEnabled = true;
