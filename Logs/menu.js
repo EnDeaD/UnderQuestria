@@ -20,7 +20,7 @@ var Menu = {
         this.background = game.add.sprite(0, 0, 'bg');
         this.background.scale.setTo(1.25, 1.25);
         this.name = game.add.sprite(75, 30, 'name');
-        this.name.scale.setTo(0.6);
+        this.name.scale.setTo(0.5);
         
         this.ebtn = game.add.sprite(273, 300, 'july');
         this.ebtn.inputEnabled = true;
@@ -32,16 +32,19 @@ var Menu = {
         this.btn.scale.setTo(0.355, 0.125);
         this.btn.events.onInputDown.add(this.startGame);
         
-        this.text = game.add.sprite(175, 550, 'btn');
+        this.text = game.add.sprite(200, 575, 'btn');
         this.text.inputEnabled = true;
-        this.text.scale.setTo(1.25, 0.05);
-        this.text = game.add.sprite(175, 200, 'btn');
+        this.text.scale.setTo(1.33, 0.05);
+        this.text = game.add.sprite(200, 200, 'btn');
         this.text.inputEnabled = true;
-        this.text.scale.setTo(1, 0.1);
-        this.text = game.add.sprite(350, 160, 'btn');
+        this.text.scale.setTo(1.33, 0.1);
+        this.text = game.add.sprite(200, 150, 'btn');
         this.text.inputEnabled = true;
         this.text.scale.setTo(0.2, 0.1);
-        this.text = game.add.sprite(500, 160, 'btn');
+        this.text = game.add.sprite(350, 150, 'btn');
+        this.text.inputEnabled = true;
+        this.text.scale.setTo(0.2, 0.1);
+        this.text = game.add.sprite(500, 150, 'btn');
         this.text.inputEnabled = true;
         this.text.scale.setTo(0.2, 0.1);
         
