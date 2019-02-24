@@ -1,6 +1,6 @@
 var More = {
     preload: function() {
-        game.load.image('dialoge', 'assets/dialoge.jpg');
+        game.load.image('dialoge', 'assets/dialoge.png');
     },
     text1: null,
     text2: null,
