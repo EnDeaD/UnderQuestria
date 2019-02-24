@@ -33,7 +33,7 @@ var Menu = {
         this.btn.scale.setTo(0.333, 0.1);
         this.btn.events.onInputDown.add(this.startGame);
         
-        this.text = game.add.text(200, 575, 'UNDERQUESTRIA V0.2 (C) DISCORDINGAMES 2019', { fontSize: '15px', fill: '#999', font: 'bold 15pt Pixel', fontStyle: 'comic cans' });
+        this.text = game.add.text(200, 575, 'UNDERQUESTRIA V0.2 (C) DISCORDINGAMES 2019', { fontSize: '15px', fill: '#999', font: 'bold 30pt Pixel', fontStyle: 'comic cans' });
         this.text.inputEnabled = true;
         this.text = game.add.text(200, 200, 'Home - Somewhere', { fontSize: '30px', fill: '#FFF', font: 'bold 30pt Pixel' });
         this.text.inputEnabled = true;
