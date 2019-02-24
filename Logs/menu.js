@@ -88,7 +88,7 @@ var Menu = {
         this.bbtn = game.add.sprite(273, 300, 'boop');
         this.bbtn.inputEnabled = true;
         this.bbtn.scale.setTo(0.5, 0.5);
-        this.bbtn.events.onInputUp.add(this.easterEgged);
+        this.bbtn.events.onInputDown.add(this.easterEgged);
     },
     easterEgged:function(){
         Menu.bbtn.kill();
