@@ -6,7 +6,7 @@ var Menu = {
         game.load.image('twil', 'assets/twi.png');
         game.load.image('july', 'assets/menu_pony.png');
         game.load.image('boop', 'assets/booped.png');
-        game.load.image('btn', 'triggers/trigger.png');
+        game.load.image('btn', 'triggers/test_trigger.png');
         game.load.image('bg', 'assets/menu.png');
         game.load.image('name', 'assets/game_name.png');
     },
@@ -28,20 +28,20 @@ var Menu = {
         this.ebtn.events.onInputDown.add(this.easterEgg);
 
         this.btn = game.add.sprite(350, 275, 'btn');
-        this.text = game.add.text(350, 275, 'Start', { fontSize: '30px', fill: '#FFF', font: 'regular 64pt Arial' });
+        this.text = game.add.text(350, 275, 'Start', { fontSize: '30px', fill: '#FFF', font: 'regular 30pt Arial' });
         this.btn.inputEnabled = true;
         this.btn.scale.setTo(0.333, 0.1);
         this.btn.events.onInputDown.add(this.startGame);
         
-        this.text = game.add.text(200, 575, 'UNDERQUESTRIA V0.2 (C) DISCORDINGAMES 2019', { fontSize: '15px', fill: '#FFF', font: 'regular 32pt Comic Sans' });
+        this.text = game.add.text(200, 575, 'UNDERQUESTRIA V0.2 (C) DISCORDINGAMES 2019', { fontSize: '15px', fill: '#FFF', font: 'regular 15pt Comic Sans' });
         this.text.inputEnabled = true;
-        this.text = game.add.text(200, 200, 'Home - Somewhere', { fontSize: '30px', fill: '#FFF', font: 'regular 64pt Arial' });
+        this.text = game.add.text(200, 200, 'Home - Somewhere', { fontSize: '30px', fill: '#FFF', font: 'regular 30pt Arial' });
         this.text.inputEnabled = true;
-        this.text = game.add.text(200, 150, 'July', { fontSize: '30px', fill: '#FFF', font: 'regular 64px Comic Sans MS' });
+        this.text = game.add.text(200, 150, 'July', { fontSize: '30px', fill: '#FFF', font: 'regular 30pt Small Fonts' });
         this.text.inputEnabled = true;
-        this.text = game.add.text(375, 150, 'LV 0', { fontSize: '30px', fill: '#FFF', font: 'regular 32px Arial' });
+        this.text = game.add.text(375, 150, 'LV 0', { fontSize: '30px', fill: '#FFF', font: 'bold 30pt Arial' });
         this.text.inputEnabled = true;
-        this.text = game.add.text(480, 150, '0:00', { fontSize: '30px', fill: '#FFF', font: 'regular 64pt Arial' });
+        this.text = game.add.text(480, 150, '0:00', { fontSize: '30px', fill: '#FFF', font: 'regular 30pt Arial' });
         this.text.inputEnabled = true;
         
         this.word = game.add.sprite(10, 530, 'twil');
