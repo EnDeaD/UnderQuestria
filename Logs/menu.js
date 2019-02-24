@@ -6,7 +6,7 @@ var Menu = {
         game.load.image('twil', 'assets/twi.png');
         game.load.image('july', 'assets/menu_pony.png');
         game.load.image('boop', 'assets/booped.png');
-        game.load.image('btn', 'triggers/test_trigger.png');
+        game.load.image('btn', 'triggers/trigger.png');
         game.load.image('bg', 'assets/menu.png');
         game.load.image('name', 'assets/game_name.png');
     },
@@ -28,6 +28,7 @@ var Menu = {
         this.ebtn.events.onInputDown.add(this.easterEgg);
 
         this.btn = game.add.sprite(350, 275, 'btn');
+        this.text = game.add.text(350, 275, 'Start', { fontSize: '30px', fill: '#FFF', font: 'regular 64pt Arial' });
         this.btn.inputEnabled = true;
         this.btn.scale.setTo(0.333, 0.1);
         this.btn.events.onInputDown.add(this.startGame);
