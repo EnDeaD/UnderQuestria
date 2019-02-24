@@ -40,10 +40,10 @@ var Menu = {
         this.text.scale.setTo(1.33, 0.1);
         this.text = game.add.sprite(200, 150, 'btn');
         this.text.inputEnabled = true;
-        this.text.scale.setTo(0.33, 0.1);
+        this.text.scale.setTo(0.5, 0.1);
         this.text = game.add.sprite(375, 150, 'btn');
         this.text.inputEnabled = true;
-        this.text.scale.setTo(0.169, 0.1);
+        this.text.scale.setTo(0.25, 0.1);
         this.text = game.add.sprite(500, 150, 'btn');
         this.text.inputEnabled = true;
         this.text.scale.setTo(0.33, 0.1);
