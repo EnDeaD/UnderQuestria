@@ -12,7 +12,6 @@ var Menu = {
     },
     btn: null,
     ebtn: null,
-    bbtn: null,
     text: null,
     background: null,
     name: null,
@@ -85,13 +84,13 @@ var Menu = {
     },
     boop:function(){
         Menu.ebtn.kill();
-        this.bbtn = game.add.sprite(273, 300, 'boop');
-        this.bbtn.inputEnabled = true;
-        this.bbtn.scale.setTo(0.5, 0.5);
-        this.bbtn.events.onInputDown.add(this.booped);
+        this.ebtn = game.add.sprite(273, 300, 'boop');
+        this.ebtn.inputEnabled = true;
+        this.ebtn.scale.setTo(0.5, 0.5);
+        this.ebtn.events.onInputDown.add(this.booped);
     },
     booped:function(){
-        Menu.bbtn.kill();
+        Menu.ebtn.kill();
         this.ebtn = game.add.sprite(273, 300, 'july');
         this.ebtn.inputEnabled = true;
         this.ebtn.scale.setTo(0.5, 0.5);
