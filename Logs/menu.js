@@ -30,7 +30,7 @@ var Menu = {
         this.btn = game.add.sprite(350, 275, 'btn');
         this.text = game.add.text(370, 275, 'Start', { fontSize: '30px', fill: '#FF0', font: 'bold 30pt Pixel' });
         this.btn.inputEnabled = true;
-        this.btn.scale.setTo(0.333, 0.1);
+        this.btn.scale.setTo(0.25, 0.1);
         this.btn.events.onInputDown.add(this.startGame);
         
         this.text = game.add.text(200, 575, 'UNDERQUESTRIA V0.2 (C) DISCORDINGAMES 2019', { fontSize: '15px', fill: '#888', font: 'bold 15pt Pixel' });
