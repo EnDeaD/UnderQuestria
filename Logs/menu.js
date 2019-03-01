@@ -80,7 +80,6 @@ var Menu = {
         game.state.start('about');
     },
     boop:function(){
-        Menu.ebtn.kill();
         this.bbtn = game.add.sprite(273, 300, 'boop');
         this.bbtn.inputEnabled = true;
         this.bbtn.scale.setTo(0.5, 0.5);
