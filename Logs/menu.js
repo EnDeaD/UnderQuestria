@@ -78,10 +78,10 @@ var Menu = {
         game.state.start('about');
     },
     boop:function(){
-        this.bbtn = game.add.sprite(273, 300, 'boop');
-        this.bbtn.inputEnabled = true;
-        this.bbtn.scale.setTo(0.5, 0.5);
-        this.bbtn.events.onInputDown.add(this.booped);
+        Menu.bbtn = game.add.sprite(273, 300, 'boop');
+        Menu.bbtn.inputEnabled = true;
+        Menu.bbtn.scale.setTo(0.5, 0.5);
+        Menu.bbtn.events.onInputDown.add(Menu.booped);
     },
     booped:function(){
         Menu.bbtn.kill();
