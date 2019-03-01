@@ -11,8 +11,6 @@ var Menu = {
         game.load.image('name', 'assets/game_name.png');
     },
     btn: null,
-    ebtn: null,
-    bbtn: null,
     text: null,
     background: null,
     name: null,
