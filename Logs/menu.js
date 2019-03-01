@@ -27,6 +27,7 @@ var Menu = {
         this.ebtn.inputEnabled = true;
         this.ebtn.scale.setTo(0.5, 0.5);
         this.ebtn.events.onInputDown.add(this.boop);
+        game.time.events.add(Phaser.Timer.SECOND * 1, this.boop, this);
 
         this.text = game.add.text(375, 275, 'Start', { fontSize: '30px', fill: '#FF0', font: 'bold 30pt Pixel' });
         this.btn = game.add.sprite(375, 275, 'btn');
@@ -83,7 +84,6 @@ var Menu = {
         this.bbtn = game.add.sprite(273, 300, 'boop');
         this.bbtn.inputEnabled = true;
         this.bbtn.scale.setTo(0.5, 0.5);
-        game.time.events.add(Phaser.Timer.SECOND * 1, this.started, this);
         Menu.bbtn.kill();
     },
 }
