@@ -80,15 +80,11 @@ var Menu = {
         game.state.start('about');
     },
     boop:function(){
-        this.ebtn.inputEnabled = false;
+        Menu.ebtn.kill();
         this.bbtn = game.add.sprite(273, 300, 'boop');
         this.bbtn.inputEnabled = true;
         this.bbtn.scale.setTo(0.5, 0.5);
-        this.bbtn.events.onInputDown.add(this.booped);
-    },
-    booped:function(){
-        this.bbtn.inputEnabled = false;
-        this.ebtn.inputEnabled = true;
-        this.ebtn.events.onInputDown.add(this.boop);
+        game.time.events.add(Phaser.Timer.SECOND * 1, this.started, this);
+        Menu.bbtn.kill();
     },
 }
