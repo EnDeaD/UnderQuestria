@@ -78,7 +78,6 @@ var Menu = {
         game.state.start('about');
     },
     boop:function(){
-        Menu.ebtn.kill();
         this.bbtn = game.add.sprite(273, 300, 'boop');
         this.bbtn.inputEnabled = true;
         this.bbtn.scale.setTo(0.5, 0.5);
@@ -86,9 +85,5 @@ var Menu = {
     },
     booped:function(){
         Menu.bbtn.kill();
-        this.ebtn = game.add.sprite(273, 300, 'july');
-        this.ebtn.inputEnabled = true;
-        this.ebtn.scale.setTo(0.5, 0.5);
-        this.ebtn.events.onInputDown.add(Menu.boop);
     },
 }
