@@ -34,7 +34,7 @@ var Menu = {
         this.btn.events.onInputDown.add(this.startGame);
         
         this.text = game.add.text(210, 575, 'UNDERQUESTRIA V0.24 (C) DISCORDINGAMES 2019', { fontSize: '15px', fill: '#888', font: 'bold 15pt Pixel' });
-        this.text = game.add.text(175, 555, '"UNDERTALE" & "MY LITTLE PONY" Сrossover (FAN-MADE)', { fontSize: '15px', fill: '#075075075', font: 'bold 15pt Pixel' });
+        this.text = game.add.text(175, 555, '"UNDERTALE" & "MY LITTLE PONY" Сrossover (FAN-MADE)', { fontSize: '15px', fill: '#070707', font: 'bold 15pt Pixel' });
         this.text = game.add.text(200, 200, 'Home - Somewhere', { fontSize: '30px', fill: '#FFF', font: 'bold 30pt Pixel' });
         this.text = game.add.text(200, 150, 'July', { fontSize: '30px', fill: '#FFF', font: 'bold 30pt Pixel' });
         this.text = game.add.text(375, 150, 'LV 0', { fontSize: '30px', fill: '#FFF', font: 'bold 30pt Pixel' });
