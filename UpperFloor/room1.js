@@ -96,10 +96,10 @@ var Room1 = {
     started: function() {
         Room1.dialoge = game.add.sprite(0, -400, 'dialoge');
         Room1.dialoge.scale.setTo(1.7)
-        Room1.text1 = game.add.text(75, 40, '(Для передвижения нажимите на: двери, лестничные и', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-        Room1.text2 = game.add.text(75, 80, 'дверные проемы. Для действия нажимайте на', { fontSize: '20px', fill: '#FFF', font: 'bold 64pt sans' });
-        Room1.text3 = game.add.text(75, 120, 'обьекты, но знайте, не все объекты взаимодействуют.)', { fontSize: '20px', fill: '#FFF', font: 'bold 64pt sans' });
-        Room1.text4 = game.add.text(75, 160, '', { fontSize: '20px', fill: '#090909', font: 'bold 64pt sans' });
+        Room1.text1 = game.add.text(75, 40, '(Для передвижения кликайте на стрелки и лестничные проёмы.', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room1.text2 = game.add.text(75, 80, 'Для действия кликайте на обьекты, но знайте, что не все', { fontSize: '20px', fill: '#FFF', font: 'bold 64pt sans' });
+        Room1.text3 = game.add.text(75, 120, 'объекты взаимодействуют, иные будут отмечены сиянием.', { fontSize: '20px', fill: '#FFF', font: 'bold 64pt sans' });
+        Room1.text4 = game.add.text(75, 160, 'Заблокированные и предметы с подвохом тоже будут отмечены.)', { fontSize: '20px', fill: '#090909', font: 'bold 64pt sans' });
         Room1.dialoge.inputEnabled = true;
         Room1.dialoge.events.onInputDown.add(Room1.superdelete);
     },
