@@ -12,8 +12,8 @@ var Words = {
         this.dialoge = game.add.sprite(0, -900, 'dialoge');
         this.dialoge.scale.setTo(1.7, 5)
         this.text0 = game.add.text(75, 75, 'Заметка от автора:', { fontSize: '30px', fill: '#FFF', font: 'bold 20pt sans' });
-        this.text1 = game.add.text(75, 125, 'Эта фан игра/пародия (п. 3, ст. 1274 ГК РФ), на оригинальную игру Undertale.', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
-        this.text2 = game.add.text(75, 175, 'Заметка от автора:', { fontSize: '30px', fill: '#FFF', font: 'bold 20pt sans' });
+        this.text1 = game.add.text(75, 125, 'Эта фан игра/пародия (п. 3, ст. 1274 ГК РФ), на оригинальную', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
+        this.text2 = game.add.text(75, 175, 'игру Undertale by TobyFox.', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
         this.text3 = game.add.text(75, 225, 'Я приношу свои извинения:', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
         this.text4 = game.add.text(75, 275, '*За использование спрайтов оригинальной игры;', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
         this.text5 = game.add.text(75, 325, '*За изменение механики и концепта игры;', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
