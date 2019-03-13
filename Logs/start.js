@@ -10,7 +10,7 @@ var Start = {
     create: function() {
         this.dialoge = game.add.sprite(0, -300, 'dialoge');
         this.dialoge.scale.setTo(1.7)
-        this.text1 = game.add.text(75, 40, '* Вы - маленькое дитя, просыпаетесь в незнакомом вам ', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        this.text1 = game.add.text(75, 40, '* Вы - юная кобылка пони, просыпаетесь в незнакомом вам ', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         this.text2 = game.add.text(75, 80, 'месте. Ваша задача: выбраться из этого дома и, ', { fontSize: '20px', fill: '#FFF', font: 'bold 64pt sans' });
         this.text3 = game.add.text(75, 120, 'по возможности, узнать все его тайны...', { fontSize: '20px', fill: '#FFF', font: 'bold 64pt sans' });
         this.text4 = game.add.text(75, 155, '(Я особо не фанат, так что много не ждите ;)', { fontSize: '20px', fill: '#090909', font: 'bold 64pt sans' });
