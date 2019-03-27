@@ -4,8 +4,8 @@ var Menu = {
         game.load.image('luna', 'assets/night.png');
         game.load.image('cele', 'assets/sun.png');
         game.load.image('twil', 'assets/twi.png');
-        game.load.image('july', 'assets/menu_pony.png');
-        game.load.image('boop', 'assets/booped.png');
+        game.load.image('july', 'assets/pony.png');
+        game.load.image('boop', 'assets/boop.png');
         game.load.image('btn', 'triggers/trigger.png');
         game.load.image('bg', 'assets/menu.png');
         game.load.image('name', 'assets/game_name.png');
