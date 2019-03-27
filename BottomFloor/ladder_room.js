@@ -55,7 +55,7 @@ var Ladder = {
         Ladder.dialoge.scale.setTo(1)
         Ladder.text1 = game.add.text(75, 40, '* Похоже, что за этой дверью просто выход... Погодите,', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Ladder.text2 = game.add.text(75, 80, 'это же то, что вам нужно: Найти выход! Значит ли, что...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-        Ladder.text3 = game.add.text(75, 150, '*** Конец игры ***', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Ladder.text3 = game.add.text(75, 140, '*** Конец игры ***', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Ladder.dialoge.inputEnabled = true;
         Ladder.dialoge.events.onInputDown.add(Ladder.clicked);
         Ladder.dialoge.events.onInputDown.add(Ladder.locked2);
