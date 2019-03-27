@@ -141,7 +141,7 @@ var Room2 = {
     unlocked: function () {
         Room2.dialoge = game.add.sprite(0, 0, 'dialoge');
         Room2.dialoge.scale.setTo(1)
-        Room2.text1 = game.add.text(75, 40, '* Дверь теперь открыта...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room2.text1 = game.add.text(75, 40, '* Похоже, что дверь теперь открыта...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room2.dialoge.inputEnabled = true;
         Room2.dialoge.events.onInputDown.add(Room2.delete);
     },
