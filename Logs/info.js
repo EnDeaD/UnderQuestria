@@ -19,7 +19,6 @@ var Info = {
         this.text5 = game.add.text(75, 325, '*Разгадывать сюжет и находить секреты.', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
         this.text6 = game.add.text(75, 375, '*Получать удовольствие.', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
         this.text6 = game.add.text(75, 425, 'Желаю вам приятной игры!', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
-        this.text = game.add.text(game.world.width-150, game.world.height-100, '-Автор', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
         game.input.onDown.add(this.clicked, this);
     },
     update: function() {
