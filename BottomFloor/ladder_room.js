@@ -6,8 +6,12 @@ var Ladder = {
     },
     door: null,
     background: null,
-    name: null,
     dialoge: null,
+    superdelete: null,
+    text1: null,
+    text2: null,
+    text3: null,
+    text4: null,
     create: function () {
         game.stage.backgroundColor = "#000";
         if(free == true){
