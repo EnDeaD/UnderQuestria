@@ -10,12 +10,12 @@ var Exit = {
     dialoge: null,
     create: function() {
         game.stage.backgroundColor = "#000";
+        this.background = game.add.sprite(0, 0, 'bg');
+        this.background.scale.setTo(1)
         this.dialoge = game.add.sprite(0, 0, 'dialoge');
         this.dialoge.scale.setTo(1)
         this.text1 = game.add.text(75, 40, '* Вы выбрались...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         game.input.onDown.add(this.clicked, this);
-        this.background = game.add.sprite(0, 0, 'bg');
-        this.background.scale.setTo(1)
     },
     update: function() {
 
