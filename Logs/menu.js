@@ -21,7 +21,7 @@ var Menu = {
         this.name = game.add.sprite(125, 30, 'name');
         this.name.scale.setTo(0.5);
         
-        this.ebtn = game.add.sprite(373, 400, 'july');
+        this.ebtn = game.add.sprite(360, 390, 'july');
         this.ebtn.inputEnabled = true;
         this.ebtn.scale.setTo(0.5, 0.5);
         this.ebtn.events.onInputDown.add(this.boop);
