@@ -21,7 +21,7 @@ var Menu = {
         this.name = game.add.sprite(125, 30, 'name');
         this.name.scale.setTo(0.5);
         
-        this.ebtn = game.add.sprite(273, 300, 'july');
+        this.ebtn = game.add.sprite(373, 400, 'july');
         this.ebtn.inputEnabled = true;
         this.ebtn.scale.setTo(0.5, 0.5);
         this.ebtn.events.onInputDown.add(this.boop);
@@ -79,14 +79,14 @@ var Menu = {
     },
     boop:function(){
         Menu.ebtn.kill();
-        Menu.bbtn = game.add.sprite(273, 300, 'boop');
+        Menu.bbtn = game.add.sprite(373, 400, 'boop');
         Menu.bbtn.inputEnabled = true;
         Menu.bbtn.scale.setTo(0.5, 0.5);
         Menu.bbtn.events.onInputDown.add(Menu.booped);
     },
     booped:function(){
         Menu.bbtn.kill();
-        Menu.ebtn = game.add.sprite(273, 300, 'july');
+        Menu.ebtn = game.add.sprite(373, 400, 'july');
         Menu.ebtn.inputEnabled = true;
         Menu.ebtn.scale.setTo(0.5, 0.5);
         Menu.ebtn.events.onInputDown.add(Menu.boop);
