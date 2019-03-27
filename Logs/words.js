@@ -9,8 +9,8 @@ var Words = {
     text5: null,
     dialoge: null,
     create: function() {
-        this.dialoge = game.add.sprite(0, 0, 'dialoge');
-        this.dialoge.scale.setTo(1)
+        this.dialoge = game.add.sprite(0, -50, 'dialoge');
+        this.dialoge.scale.setTo(1, 2.5)
         this.text0 = game.add.text(75, 75, 'Заметка от автора:', { fontSize: '30px', fill: '#FFF', font: 'bold 20pt sans' });
         this.text1 = game.add.text(75, 125, 'Эта фан-игра ("Пародия" - п. 3, ст. 1274 ГК РФ),', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
         this.text2 = game.add.text(75, 175, 'на оригинальную игру Undertale by TobyFox.', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
