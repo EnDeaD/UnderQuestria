@@ -13,15 +13,12 @@ var More = {
         this.dialoge.scale.setTo(1.7)
         this.text0 = game.add.text(75, 50, 'Обучение:', { fontSize: '30px', fill: '#FFF', font: 'bold 20pt sans' });
         this.text1 = game.add.text(75, 125, 'ОСОБОЕ ВНИМАНИЕ!', { fontSize: '24px', fill: '#FFF', font: 'bold 20pt sans' });
-        this.text2 = game.add.text(75, 175, '', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
-        this.text3 = game.add.text(594, 217, '▲', { fontSize: '14px', fill: '#FFF', font: 'regular 64pt sans' });
-        this.text4 = game.add.text(75, 225, 'Если на экране возникнет данное диалоговое окно |, то', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
-        this.text5 = game.add.text(75, 275, 'прошу Вас, строго нажимайте, только непосредственно на него,', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
-        this.text6 = game.add.text(75, 325, 'иначе, я не гарантирую Вам стабильную игру без БАГов,', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
-        this.text6 = game.add.text(75, 375, 'потерянного прогресса (игра не сохраняет ваши данные),', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
-        this.text7 = game.add.text(75, 425, 'критических ошибок и прочего...', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
-        this.text8 = game.add.text(75, 475, '(А так же никуда не спешите, и не нажимайте на действ. дважды)', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
-        this.text = game.add.text(game.world.width-150, game.world.height-75, '-Автор', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
+        this.text4 = game.add.text(75, 225, 'Если на экране возникнет данное диалоговое окно, то', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
+        this.text5 = game.add.text(75, 275, 'действия с другими предметами будут ограничены, прочитав', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
+        this.text6 = game.add.text(75, 325, 'содержимое диалогового окна, просто кликните по нему и', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
+        this.text6 = game.add.text(75, 375, 'оно само удалится с экрана, или откроет следующее сообщение.', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
+        this.text7 = game.add.text(75, 425, 'Игра не сохраняет Ваш прогресс, если вы застряли или вызвали', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
+        this.text8 = game.add.text(75, 475, 'критическую ошибку, то Вам придется начинать всё с самого начала.', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
         this.dialoge.inputEnabled = true;
         this.dialoge.events.onInputDown.add(this.clicked);
     },
