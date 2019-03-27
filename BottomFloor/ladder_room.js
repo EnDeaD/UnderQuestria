@@ -89,10 +89,10 @@ var Ladder = {
         Ladder.dialoge.events.onInputDown.add(Ladder.superdelete);
     },
     superdelete:function(){
-        Room1.dialoge.kill();
-        Room1.text1.kill();
-        Room1.text2.kill();
-        Room1.text3.kill();
-        Room1.text4.kill();
+        Ladder.dialoge.kill();
+        Ladder.text1.kill();
+        Ladder.text2.kill();
+        Ladder.text3.kill();
+        Ladder.text4.kill();
     },
 }
