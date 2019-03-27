@@ -2,7 +2,6 @@ var Hall = {
     preload: function () {
         game.load.image('trigger', 'triggers/trigger.png');
         game.load.image('bg', 'assets/hall_room.png');
-        game.load.image('name', 'assets/game_name.png');
     },
     door: null,
     background: null,
@@ -49,8 +48,8 @@ var Hall = {
         game.state.start('big');
     },
     thirdRoom:function(){
-        Hall.dialoge = game.add.sprite(0, -300, 'dialoge');
-        Hall.dialoge.scale.setTo(1.7)
+        Hall.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Hall.dialoge.scale.setTo(1)
         Hall.text1 = game.add.text(75, 40, '* Это секретная комната... Ну, теперь уже не совсем', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Hall.text2 = game.add.text(75, 80, 'секретная, но, так или иначе, вам нужен ключ от неё...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Hall.dialoge.inputEnabled = true;
