@@ -2,7 +2,7 @@ var Small = {
     preload: function () {
         game.load.image('trigger', 'triggers/trigger.png');
         game.load.image('bg', 'assets/small_room.png');
-        game.load.image('dialoge', 'assets/dialoge.png');
+        game.load.image('dialoge', 'assets/dialoge1.png');
     },
     door: null,
     background: null,
