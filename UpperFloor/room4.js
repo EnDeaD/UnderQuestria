@@ -2,8 +2,7 @@ var Room4 = {
     preload: function () {
         game.load.image('trigger', 'triggers/trigger.png');
         game.load.image('bg', 'assets/monochrome_kitchen_room.png');
-        game.load.image('name', 'assets/game_name.png');
-        game.load.image('dialoge', 'assets/dialoge1.jpg');
+        game.load.image('dialoge', 'assets/dialoge1.png');
 
     },
     door: null,
@@ -33,8 +32,8 @@ var Room4 = {
         game.state.start('room3');
     },
     nothing: function () {
-        Room4.dialoge = game.add.sprite(0, -400, 'dialoge');
-        Room4.dialoge.scale.setTo(1.7)
+        Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Room4.dialoge.scale.setTo(1)
         Room4.text1 = game.add.text(75, 40, '* Похоже, что здесь ничего интересного...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room4.dialoge.inputEnabled = true;
         Room4.dialoge.events.onInputDown.add(Room4.delete);
