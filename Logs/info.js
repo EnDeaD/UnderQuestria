@@ -9,8 +9,8 @@ var Info = {
     text5: null,
     dialoge: null,
     create: function() {
-        this.dialoge = game.add.sprite(0, -900, 'dialoge');
-        this.dialoge.scale.setTo(1.7, 5)
+        this.dialoge = game.add.sprite(0, 0, 'dialoge');
+        this.dialoge.scale.setTo(1)
         this.text0 = game.add.text(75, 75, 'Обучение:', { fontSize: '30px', fill: '#FFF', font: 'bold 20pt sans' });
         this.text1 = game.add.text(75, 125, 'Внимание!', { fontSize: '24px', fill: '#FFF', font: 'bold 20pt sans' });
         this.text2 = game.add.text(75, 175, 'Эта игра в жанре "Point And Click Quest" (НЕ RPG Quest)', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
