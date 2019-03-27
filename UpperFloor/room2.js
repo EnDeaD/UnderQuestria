@@ -123,7 +123,7 @@ var Room2 = {
     },
     lever: function () {
         Room2.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room2.dialoge.scale.setTo(1.7)
+        Room2.dialoge.scale.setTo(1)
         Room2.text1 = game.add.text(75, 40, '* Похоже, что в камине был рычаг...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room2.dialoge.inputEnabled = true;
         Room2.dialoge.events.onInputDown.add(Room2.delete);
@@ -132,21 +132,18 @@ var Room2 = {
     backRoomKey: function () {
         Room2.dialoge = game.add.sprite(0, 0, 'dialoge');
         Room2.dialoge.scale.setTo(1)
-        Room2.text1 = game.add.text(75, 40, '* Возвращаясь назад, Вы заметили ключ...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room2.text1 = game.add.text(75, 40, '* Возвращаясь назад, Вы споткнулись об рычаг...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room2.text2 = game.add.text(75, 80, '(Слишком сложно для Вас?...)', { fontSize: '20px', fill: '#111', font: 'bold 20pt sans' });
         Room2.dialoge.inputEnabled = true;
         Room2.dialoge.events.onInputDown.add(Room2.delete1);
         Room2.dialoge.events.onInputDown.add(Room2.unlocked4);
     },
     unlocked: function () {
-        if(room2un == true && room2lo == true && room2ck == true && room2ed == true){
-            Room2.dialoge = game.add.sprite(0, 0, 'dialoge');
-            Room2.dialoge.scale.setTo(1)
-            Room2.text1 = game.add.text(75, 40, '* Дверь теперь открыта...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-            Room2.dialoge.inputEnabled = true;
-            Room2.dialoge.events.onInputDown.add(Room2.delete);
-            Room2.lock.kill();
-        }
+        Room2.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Room2.dialoge.scale.setTo(1)
+        Room2.text1 = game.add.text(75, 40, '* Дверь теперь открыта...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room2.dialoge.inputEnabled = true;
+        Room2.dialoge.events.onInputDown.add(Room2.delete);
     },
     unlocked1: function () {
         Room2.dialoge = game.add.sprite(0, 0, 'dialoge');
@@ -156,6 +153,9 @@ var Room2 = {
         Room2.dialoge.events.onInputDown.add(Room2.delete);
         room2un = true;
         Room2.lock1.kill();
+        if(room2un == true && room2lo == true && room2ck == true && room2ed == true){
+            Room2.dialoge.events.onInputDown.add(Room2.unlocked);
+        }
     },
     unlocked2: function () {
         Room2.dialoge = game.add.sprite(0, 0, 'dialoge');
@@ -165,6 +165,9 @@ var Room2 = {
         Room2.dialoge.events.onInputDown.add(Room2.delete);
         room2lo = true;
         Room2.lock2.kill();
+        if(room2un == true && room2lo == true && room2ck == true && room2ed == true){
+            Room2.dialoge.events.onInputDown.add(Room2.unlocked);
+        }
     },
     unlocked3: function () {
         Room2.dialoge = game.add.sprite(0, 0, 'dialoge');
@@ -174,6 +177,9 @@ var Room2 = {
         Room2.dialoge.events.onInputDown.add(Room2.delete);
         room2ck = true;
         Room2.lock3.kill();
+        if(room2un == true && room2lo == true && room2ck == true && room2ed == true){
+            Room2.dialoge.events.onInputDown.add(Room2.unlocked);
+        }
     },
     unlocked4: function () {
         Room2.dialoge = game.add.sprite(0, 0, 'dialoge');
@@ -184,6 +190,9 @@ var Room2 = {
         room2ed = true;
         Room2.lock4.kill();
         Room2.unlock4.kill();
+        if(room2un == true && room2lo == true && room2ck == true && room2ed == true){
+            Room2.dialoge.events.onInputDown.add(Room2.unlocked);
+        }
     },
     delete:function(){
         Room2.dialoge.kill();
