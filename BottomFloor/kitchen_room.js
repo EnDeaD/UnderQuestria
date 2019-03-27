@@ -3,6 +3,7 @@ var Kitchen = {
         game.load.image('trigger', 'triggers/trigger.png');
         game.load.image('bg', 'assets/kitchen_room.png');
         game.load.image('name', 'assets/game_name.png');
+        game.load.image('dialoge', 'assets/dialoge.png');
     },
     door: null,
     background: null,
