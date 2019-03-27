@@ -77,10 +77,10 @@ var Ladder = {
     ended: function() {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
         Room1.dialoge.scale.setTo(1)
-        Room1.text1 = game.add.text(75, 40, '* Вот и все, это выход... (к югу от лестницы)', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-        Room1.text2 = game.add.text(75, 80, '* Похоже, что Ваше приключение окончено...', { fontSize: '20px', fill: '#BBB', font: 'bold 64pt sans' });
-        Room1.text3 = game.add.text(75, 120, '* Но захотите ли Вы узнать историю этого дома?...', { fontSize: '20px', fill: '#888', font: 'bold 64pt sans' });
-        Room1.text4 = game.add.text(75, 160, '* Это решать уже вам...', { fontSize: '20px', fill: '#444', font: 'bold 64pt sans' });
+        Room1.text1 = game.add.text(75, 35, '* Вот и все, это выход... (к югу от лестницы)', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room1.text2 = game.add.text(75, 75, '* Похоже, что Ваше приключение окончено...', { fontSize: '20px', fill: '#BBB', font: 'bold 64pt sans' });
+        Room1.text3 = game.add.text(75, 115, '* Но захотите ли Вы узнать историю этого дома?...', { fontSize: '20px', fill: '#888', font: 'bold 64pt sans' });
+        Room1.text4 = game.add.text(75, 155, '* Это решать уже вам...', { fontSize: '20px', fill: '#444', font: 'bold 64pt sans' });
 
         Room1.dialoge.inputEnabled = true;
         Room1.dialoge.events.onInputDown.add(Room1.superdelete);
