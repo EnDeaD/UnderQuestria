@@ -2,8 +2,7 @@ var Living = {
     preload: function () {
         game.load.image('trigger', 'triggers/trigger.png');
         game.load.image('bg', 'assets/living_room.png');
-        game.load.image('name', 'assets/game_name.png');
-        game.load.image('dialoge', 'assets/dialoge.png');
+        game.load.image('dialoge', 'assets/dialoge1.png');
     },
     door: null,
     backdoor: null,
