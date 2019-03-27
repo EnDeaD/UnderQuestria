@@ -79,14 +79,14 @@ var Menu = {
     },
     boop:function(){
         Menu.ebtn.kill();
-        Menu.bbtn = game.add.sprite(373, 400, 'boop');
+        Menu.bbtn = game.add.sprite(360, 390, 'boop');
         Menu.bbtn.inputEnabled = true;
         Menu.bbtn.scale.setTo(0.5, 0.5);
         Menu.bbtn.events.onInputDown.add(Menu.booped);
     },
     booped:function(){
         Menu.bbtn.kill();
-        Menu.ebtn = game.add.sprite(373, 400, 'july');
+        Menu.ebtn = game.add.sprite(360, 390, 'july');
         Menu.ebtn.inputEnabled = true;
         Menu.ebtn.scale.setTo(0.5, 0.5);
         Menu.ebtn.events.onInputDown.add(Menu.boop);
