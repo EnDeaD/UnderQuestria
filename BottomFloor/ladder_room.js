@@ -86,7 +86,7 @@ var Ladder = {
         Ladder.text3 = game.add.text(75, 110, '* Но захотите ли Вы узнать историю этого дома?...', { fontSize: '20px', fill: '#888', font: 'bold 64pt sans' });
         Ladder.text4 = game.add.text(75, 150, '* Это решать уже вам...', { fontSize: '20px', fill: '#444', font: 'bold 64pt sans' });
         Ladder.dialoge.inputEnabled = true;
-        Ladder.dialoge.events.onInputDown.add(Room1.superdelete);
+        Ladder.dialoge.events.onInputDown.add(Ladder.superdelete);
     },
     superdelete:function(){
         Ladder.dialoge.kill();
