@@ -2,8 +2,7 @@ var Room3 = {
     preload: function () {
         game.load.image('trigger', 'triggers/trigger.png');
         game.load.image('bg', 'assets/monochrome_main_room.png');
-        game.load.image('name', 'assets/game_name.png');
-        game.load.image('dialoge', 'assets/dialoge1.jpg');
+        game.load.image('dialoge', 'assets/dialoge1.png');
     },
     door: null,
     background: null,
@@ -49,9 +48,9 @@ var Room3 = {
 
     },
     massage:function(){
-        Room3.dialoge = game.add.sprite(0, -400, 'dialoge');
+        Room3.dialoge = game.add.sprite(0, 0, 'dialoge');
         dialog = false;
-        Room3.dialoge.scale.setTo(1.7);
+        Room3.dialoge.scale.setTo(1);
         Room3.text = game.add.text(75, 40, '* Похоже, что Вы еще не все осмотрели на этом этаже...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room3.dialoge.inputEnabled = true;
         Room3.dialoge.events.onInputDown.add(Room3.clicked);
@@ -60,15 +59,15 @@ var Room3 = {
         game.state.start('room4');
     },
     backRoom:function(){
-        Room3.dialoge = game.add.sprite(0, -400, 'dialoge');
-        Room3.dialoge.scale.setTo(1.7)
+        Room3.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Room3.dialoge.scale.setTo(1)
         Room3.text1 = game.add.text(75, 40, '* Вам незачем возвращаться туда...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room3.dialoge.inputEnabled = true;
         Room3.dialoge.events.onInputDown.add(Room3.delete);
     },
     secondRoom:function(){
-        Room3.dialoge1 = game.add.sprite(0, -400, 'dialoge');
-        Room3.dialoge1.scale.setTo(1.7);
+        Room3.dialoge1 = game.add.sprite(0, 0, 'dialoge');
+        Room3.dialoge1.scale.setTo(1);
         Room3.text1 = game.add.text(75, 40, '* Похоже, что за этой дверью просто стена...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room3.dialoge1.inputEnabled = true;
         Room3.dialoge1.events.onInputDown.add(Room3.clicked1);
