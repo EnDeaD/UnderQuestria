@@ -1,6 +1,6 @@
 var Exit = {
     preload: function() {
-        game.load.image('dialoge', 'assets/dialoge.jpg');
+        game.load.image('dialoge1', 'assets/dialoge.jpg');
         game.load.image('bg', 'assets/bg_full.png');
     },
     text1: null,
