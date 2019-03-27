@@ -94,7 +94,7 @@ var Room1 = {
     },
     started: function() {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '(Для передвижения кликайте на стрелки и лестничные проёмы.', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.text2 = game.add.text(75, 80, 'Для действия кликайте на обьекты, но знайте, что не все', { fontSize: '20px', fill: '#FFF', font: 'bold 64pt sans' });
         Room1.text3 = game.add.text(75, 120, 'объекты взаимодействуют, иные будут отмечены сиянием.', { fontSize: '20px', fill: '#FFF', font: 'bold 64pt sans' });
@@ -111,7 +111,7 @@ var Room1 = {
     },
     locked: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Дверь закрыта. Найдите что-нибудь, что может ее', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.text2 = game.add.text(75, 80, 'открыть, например ключ или рычаг...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.dialoge.inputEnabled = true;
@@ -119,7 +119,7 @@ var Room1 = {
     },
     kluch: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Похоже, что под ковриком лежал ключ...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.dialoge.inputEnabled = true;
         Room1.dialoge.events.onInputDown.add(Room1.delete);
@@ -127,7 +127,7 @@ var Room1 = {
     },
     unlocked: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Дверь теперь открыта...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.dialoge.inputEnabled = true;
         Room1.dialoge.events.onInputDown.add(Room1.delete);
@@ -163,14 +163,14 @@ var Room1 = {
     },
     nothing: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Ничего не произошло...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.dialoge.inputEnabled = true;
         Room1.dialoge.events.onInputDown.add(Room1.delete);
     },
     nothing1: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Похоже, что здесь нечего скрывать...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.dialoge.inputEnabled = true;
         Room1.dialoge.events.onInputDown.add(Room1.delete);
@@ -184,14 +184,14 @@ var Room1 = {
     },
     nothing3: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Это не помогло...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.dialoge.inputEnabled = true;
         Room1.dialoge.events.onInputDown.add(Room1.delete);
     },
     lamp: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Вы дернули за переключатель торшера...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.dialoge.inputEnabled = true;
         Room1.dialoge.events.onInputDown.add(Room1.delete);
@@ -199,7 +199,7 @@ var Room1 = {
     },
     picture: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Вы опустили фотографию, в надежде активировать', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.text2 = game.add.text(75, 80, 'какой-либо механизм...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
 
@@ -209,7 +209,7 @@ var Room1 = {
     },
     shoes: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Это полка, полная маленькой обуви, идеально', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.text2 = game.add.text(75, 80, 'подходящая для Ваc по размеру...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.dialoge.inputEnabled = true;
@@ -218,7 +218,7 @@ var Room1 = {
     },
     shkaf: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Вы открыли дверь шкафа, в надежде найти выход...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.dialoge.inputEnabled = true;
         Room1.dialoge.events.onInputDown.add(Room1.delete);
@@ -226,7 +226,7 @@ var Room1 = {
     },
     bedone: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Это кровать, на которой вы проснулись...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.dialoge.inputEnabled = true;
         Room1.dialoge.events.onInputDown.add(Room1.delete);
@@ -234,7 +234,7 @@ var Room1 = {
     },
     search: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Кровать немного напирает на ковер, с очень', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.text2 = game.add.text(75, 80, 'подозрительным краем, но в целом, в этой кровати', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.text3 = game.add.text(75, 120, 'ничего подозрительного нет... -_-', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
@@ -244,7 +244,7 @@ var Room1 = {
     },
     sleep: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Вы решили вздремнуть...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.dialoge.inputEnabled = true;
         Room1.dialoge.events.onInputDown.add(Room1.delete);
@@ -252,7 +252,7 @@ var Room1 = {
     },
     poster: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Это идеальная картинка для потайного прохода,', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.text2 = game.add.text(75, 80, 'но, как Вы могли сперва подумать,...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.dialoge.inputEnabled = true;
@@ -261,7 +261,7 @@ var Room1 = {
     },
     box: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Вы проверили эту коробку, полную игрушек, на', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.text2 = game.add.text(75, 80, 'предмет наличия рычагов, и...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.dialoge.inputEnabled = true;
@@ -270,7 +270,7 @@ var Room1 = {
     },
     toys: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* В этих пыльных игрушках нет никаких ключей. Но,', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.text2 = game.add.text(75, 80, 'когда вы до них дотронулись... ', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.dialoge.inputEnabled = true;
@@ -279,7 +279,7 @@ var Room1 = {
     },
     bedtwo: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Эта кровать менее удобная, чем та, на которой вы', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.text2 = game.add.text(75, 80, 'проснулись, и она даже не напирает на этот весьма', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.text3 = game.add.text(75, 120, 'подозрительный ковер, но вы, все же, присели на нее...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
