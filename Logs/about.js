@@ -10,7 +10,7 @@ var About = {
     dialoge: null,
     create: function() {
         this.dialoge = game.add.sprite(0, 0, 'dialoge');
-        this.dialoge.scale.setTo(1)
+        this.dialoge.scale.setTo(1, 4)
         this.text0 = game.add.text(75, 75, 'Титры:', { fontSize: '30px', fill: '#FFF', font: 'bold 20pt sans' });
         this.text1 = game.add.text(75, 125, 'Автор игры: Discording Myself', { fontSize: '24px', fill: '#FFF', font: 'bold 20pt Sans' });
         this.text2 = game.add.text(75, 175, 'Вебсайт: всё ещё в разработке', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt Arial' });
