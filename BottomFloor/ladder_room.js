@@ -2,9 +2,7 @@ var Ladder = {
     preload: function () {
         game.load.image('trigger', 'triggers/trigger.png');
         game.load.image('bg', 'assets/main_room.png');
-        game.load.image('name', 'assets/game_name.png');
-        game.load.image('dialoge', 'assets/dialoge.jpg');
-
+        game.load.image('dialoge', 'assets/dialoge.png');
     },
     door: null,
     background: null,
@@ -53,8 +51,8 @@ var Ladder = {
         game.state.start('living');
     },
     secondRoom:function(){
-        Ladder.dialoge = game.add.sprite(0, -300, 'dialoge');
-        Ladder.dialoge.scale.setTo(1.7)
+        Ladder.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Ladder.dialoge.scale.setTo(1)
         Ladder.text1 = game.add.text(75, 40, '* Похоже, что за этой дверью просто выход... Погодите,', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Ladder.text2 = game.add.text(75, 80, 'это же то, что вам нужно: Найти выход! Значит ли, что...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Ladder.text3 = game.add.text(75, 150, '*** Конец игры ***', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
@@ -77,8 +75,8 @@ var Ladder = {
         game.state.start('room3');
     },
     ended: function() {
-        Room1.dialoge = game.add.sprite(0, -300, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Вот и все, это выход... (к югу от лестницы)', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.text2 = game.add.text(75, 80, '* Похоже, что Ваше приключение окончено...', { fontSize: '20px', fill: '#BBB', font: 'bold 64pt sans' });
         Room1.text3 = game.add.text(75, 120, '* Но захотите ли Вы узнать историю этого дома?...', { fontSize: '20px', fill: '#888', font: 'bold 64pt sans' });
