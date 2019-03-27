@@ -75,22 +75,22 @@ var Ladder = {
         game.state.start('room3');
     },
     ended: function() {
-        Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1)
-        Room1.text1 = game.add.text(75, 35, '* Вот и все, это выход... (к югу от лестницы)', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-        Room1.text2 = game.add.text(75, 75, '* Похоже, что Ваше приключение окончено...', { fontSize: '20px', fill: '#BBB', font: 'bold 64pt sans' });
-        Room1.text3 = game.add.text(75, 115, '* Но захотите ли Вы узнать историю этого дома?...', { fontSize: '20px', fill: '#888', font: 'bold 64pt sans' });
-        Room1.text4 = game.add.text(75, 155, '* Это решать уже вам...', { fontSize: '20px', fill: '#444', font: 'bold 64pt sans' });
+        Ladder.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Ladder.dialoge.scale.setTo(1)
+        Ladder.text1 = game.add.text(75, 35, '* Вот и все, это выход... (к югу от лестницы)', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Ladder.text2 = game.add.text(75, 75, '* Похоже, что Ваше приключение окончено...', { fontSize: '20px', fill: '#BBB', font: 'bold 64pt sans' });
+        Ladder.text3 = game.add.text(75, 115, '* Но захотите ли Вы узнать историю этого дома?...', { fontSize: '20px', fill: '#888', font: 'bold 64pt sans' });
+        Ladder.text4 = game.add.text(75, 155, '* Это решать уже вам...', { fontSize: '20px', fill: '#444', font: 'bold 64pt sans' });
 
-        Room1.dialoge.inputEnabled = true;
-        Room1.dialoge.events.onInputDown.add(Room1.superdelete);
+        Ladder.dialoge.inputEnabled = true;
+        Ladder.dialoge.events.onInputDown.add(Room1.superdelete);
     },
     superdelete:function(){
-        Room1.dialoge.kill();
-        Room1.text1.kill();
-        Room1.text2.kill();
-        Room1.text3.kill();
-        Room1.text4.kill();    
-        Room1.text5.kill(); 
+        Ladder.dialoge.kill();
+        Ladder.text1.kill();
+        Ladder.text2.kill();
+        Ladder.text3.kill();
+        Ladder.text4.kill();    
+        Ladder.text5.kill(); 
     },
 }
