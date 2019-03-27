@@ -10,6 +10,7 @@ var More = {
     dialoge: null,
     create: function() {
         this.dialoge = game.add.sprite(0, 0, 'dialoge');
+        this.dialoge.scale.setTo(1)
         this.text0 = game.add.text(75, 50, 'Обучение:', { fontSize: '30px', fill: '#FFF', font: 'bold 20pt sans' });
         this.text1 = game.add.text(75, 125, 'ОСОБОЕ ВНИМАНИЕ!', { fontSize: '24px', fill: '#FFF', font: 'bold 20pt sans' });
         this.text4 = game.add.text(75, 225, 'Если на экране возникнет данное диалоговое окно, то', { fontSize: '24px', fill: '#FFF', font: 'regular 64pt sans' });
