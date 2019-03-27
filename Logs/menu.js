@@ -41,12 +41,12 @@ var Menu = {
         
         this.word = game.add.sprite(10, 530, 'cade');
         this.word.inputEnabled = true;
-        this.word.scale.setTo(0.09, 0.07);
+        this.word.scale.setTo(0.09);
         this.word.events.onInputDown.add(this.words);
 
         this.inf = game.add.sprite(710, 540, 'twil');
         this.inf.inputEnabled = true;
-        this.inf.scale.setTo(0.09);
+        this.inf.scale.setTo(0.09, 0.07);
         this.inf.events.onInputDown.add(this.info);
 
         this.mor = game.add.sprite(700, 110, 'luna');
