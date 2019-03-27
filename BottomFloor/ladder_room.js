@@ -2,7 +2,7 @@ var Ladder = {
     preload: function () {
         game.load.image('trigger', 'triggers/trigger.png');
         game.load.image('bg', 'assets/main_room.png');
-        game.load.image('dialoge', 'assets/dialoge.png');
+        game.load.image('dialoge', 'assets/dialoge1.png');
     },
     door: null,
     background: null,
