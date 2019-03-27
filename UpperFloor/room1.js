@@ -177,7 +177,7 @@ var Room1 = {
     },
     nothing2: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Room1.dialoge.scale.setTo(1.7)
+        Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Это не выход...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.dialoge.inputEnabled = true;
         Room1.dialoge.events.onInputDown.add(Room1.delete);
