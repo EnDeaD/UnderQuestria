@@ -1,6 +1,6 @@
 var Room1 = {
     preload: function () {
-        game.load.image('trigger', 'triggers/trigger.png');
+        game.load.image('trigger', 'triggers/shine.png');
         game.load.image('bg', 'assets/monochrome_small_room.png');
         game.load.image('dialoge', 'assets/dialoge1.png');
     },
