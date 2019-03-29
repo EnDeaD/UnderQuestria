@@ -27,7 +27,7 @@ var Room1 = {
             game.time.events.add(Phaser.Timer.SECOND * 0.1, this.started, this);
             
             this.locker = game.add.sprite(525, 525, 'lock');
-            this.background.scale.setTo(0.25)
+            this.locker.scale.setTo(0.25)
             this.lock = game.add.sprite(510, 525, 'trigger');
             this.lock.width = 140
             this.lock.height = 100
