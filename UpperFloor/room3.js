@@ -40,7 +40,7 @@ var Room3 = {
         this.secondFloor.events.onInputDown.add(this.changeFloor);
 
         if(floor1un == false){
-            this.locker = game.add.sprite(game.world.centerX-25, 250, 'lock');
+            this.locker = game.add.sprite(game.world.centerX-175, 250, 'lock');
             this.locker.scale.setTo(0.25)
             this.floorLock = game.add.sprite(game.world.centerX-200, 150, 'htrigger');
             this.floorLock.width = 330
