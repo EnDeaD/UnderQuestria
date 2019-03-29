@@ -18,7 +18,6 @@ var Room1 = {
         this.background.scale.setTo(3, 3)
         
         this.door = game.add.sprite(510, 525, 'exit');
-        this.door = game.add.sprite(525, 525, 'lock');
         this.door.width = 140
         this.door.height = 100
         this.door.inputEnabled = true;
@@ -27,6 +26,7 @@ var Room1 = {
         if(room1un == false){
             game.time.events.add(Phaser.Timer.SECOND * 0.1, this.started, this);
 
+            this.locker = game.add.sprite(525, 525, 'lock');
             this.lock = game.add.sprite(510, 525, 'trigger');
             this.lock.width = 140
             this.lock.height = 100
@@ -138,6 +138,7 @@ var Room1 = {
         Room1.dialoge.events.onInputDown.add(Room1.delete);
         room1un = true;
         Room1.lock.kill();
+        Room1.locker.kill();
     },
     nextRoom:function(){
         game.state.start('room2');
