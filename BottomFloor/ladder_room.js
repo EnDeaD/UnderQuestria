@@ -37,8 +37,11 @@ var Ladder = {
         this.secondDoor.width = 100;
         this.secondDoor.height = 75;
         this.secondDoor.inputEnabled = true;
-        this.secondDoor.events.onInputDown.add(this.secondRoom);
-
+        if(Continue == false){
+            this.secondDoor.events.onInputDown.add(this.secondRoom);
+        } else {
+            this.secondDoor.events.onInputDown.add(this.locked);
+        }
         this.secondFloor = game.add.sprite(game.world.centerX-200, 0, 'trigger');
         this.secondFloor.width = 330;
         this.secondFloor.height = 320;
@@ -62,7 +65,7 @@ var Ladder = {
         Ladder.text3 = game.add.text(75, 140, '*** Конец игры ***', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Ladder.dialoge.inputEnabled = true;
         Ladder.dialoge.events.onInputDown.add(Ladder.clicked);
-        Ladder.dialoge.events.onInputDown.add(Ladder.locked2);
+        Ladder.dialoge.events.onInputDown.add(Ladder.locked);
     },
     clicked:function(){
         Ladder.dialoge.kill();
@@ -70,7 +73,7 @@ var Ladder = {
         Ladder.text2.kill();
         Ladder.text3.kill();
     },
-    locked2:function(){
+    locked:function(){
         Ladder.dialoge.kill();
         Ladder.text1.kill();
         game.state.start('exit');
