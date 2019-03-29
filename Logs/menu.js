@@ -26,14 +26,14 @@ var Menu = {
         this.ebtn.scale.setTo(0.5, 0.5);
         this.ebtn.events.onInputDown.add(this.boop);
 
-        this.text = game.add.text(375, 275, 'Start', { fontSize: '30px', fill: '#FF0', font: 'bold 30pt Pixel' });
-        this.btn = game.add.sprite(375, 275, 'btn');
-        this.btn.inputEnabled = true;
-        this.btn.scale.setTo(0.25, 0.1);
-        this.btn.events.onInputDown.add(this.startGame);
-        
-        if(Continue == true){
-            this.text = game.add.text(360, 275, 'Continue', { fontSize: '30px', fill: '#FF0', font: 'bold 30pt Pixel' });
+        if(Continue == false){
+            this.text = game.add.text(375, 275, 'Start', { fontSize: '30px', fill: '#FF0', font: 'bold 30pt Pixel' });
+            this.btn = game.add.sprite(375, 275, 'btn');
+            this.btn.inputEnabled = true;
+            this.btn.scale.setTo(0.25, 0.1);
+            this.btn.events.onInputDown.add(this.startGame);
+        } else {    
+            this.text = game.add.text(350, 275, 'Continue', { fontSize: '30px', fill: '#FF0', font: 'bold 30pt Pixel' });
             this.btn = game.add.sprite(375, 275, 'btn');
             this.btn.inputEnabled = true;
             this.btn.scale.setTo(0.25, 0.1);
