@@ -16,9 +16,9 @@ var Room2 = {
         this.background = game.add.sprite(0, 0, 'bg');
         this.background.scale.setTo(2.5)
 
-        this.door = game.add.sprite(700, 350, 'exit');
-        this.door.width = 100
-        this.door.height = 170
+        this.door = game.add.sprite(750, 360, 'exit');
+        this.door.width = 50
+        this.door.height = 160
         this.door.inputEnabled = true;
         this.door.events.onInputDown.add(this.nextRoom);
 
@@ -34,7 +34,8 @@ var Room2 = {
             this.btn.height = 200
             this.btn.inputEnabled = true;
             this.btn.events.onInputDown.add(this.fireplace);
-
+            
+            this.locker = game.add.sprite(750, 400, 'lock');
             this.lock1 = game.add.sprite(700, 350, 'trigger');
             this.lock1.width = 100
             this.lock1.height = 170
@@ -146,6 +147,7 @@ var Room2 = {
         Room2.text1 = game.add.text(75, 40, '* Похоже, что дверь теперь открыта...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room2.dialoge.inputEnabled = true;
         Room2.dialoge.events.onInputDown.add(Room2.delete);
+        Room2.locker.kill();
     },
     unlocked1: function () {
         Room2.dialoge = game.add.sprite(0, 0, 'dialoge');
