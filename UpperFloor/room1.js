@@ -1,7 +1,8 @@
 var Room1 = {
     preload: function () {
         game.load.image('trigger', 'triggers/shine.png');
-        game.load.image('triggered', 'triggers/shines.png');
+        game.load.image('help_trigger', 'triggers/shine1.png');
+        game.load.image('htrigger', 'triggers/trigger.png');
         game.load.image('bg', 'assets/monochrome_small_room.png');
         game.load.image('dialoge', 'assets/dialoge1.png');
     },
@@ -30,11 +31,12 @@ var Room1 = {
             this.lock.inputEnabled = true;
             this.lock.events.onInputDown.add(this.locked);
 
-            this.unlock = game.add.sprite(200, 425, 'trigger');
+            this.unlock = game.add.sprite(200, 425, 'htrigger');
             this.unlock.width = 75
             this.unlock.height = 75
             this.unlock.inputEnabled = true;
             this.unlock.events.onInputDown.add(this.kluch);
+            game.time.events.add(Phaser.Timer.SECOND * 3, this.help, this);
 
             this.btn = game.add.sprite(635, 90, 'trigger');
             this.btn.width = 50
@@ -191,7 +193,6 @@ var Room1 = {
         Room1.text1 = game.add.text(75, 40, '* Это не помогло...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.dialoge.inputEnabled = true;
         Room1.dialoge.events.onInputDown.add(Room1.delete);
-        looked = true;
     },
     lamp: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
@@ -229,12 +230,6 @@ var Room1 = {
         Room1.dialoge.events.onInputDown.add(Room1.nothing2);
     },
     bedone: function () {
-        Room1.btn1 = game.add.sprite(125, 200, 'triggered');
-        Room1.btn1.width = 100
-        Room1.btn1.height = 150
-        Room1.btn1.inputEnabled = true;
-        Room1.btn.events.onInputDown.add(this.bedone);
-        Room1.btn.kill();
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
         Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Это кровать, на которой вы проснулись...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
@@ -297,4 +292,11 @@ var Room1 = {
         Room1.dialoge.events.onInputDown.add(Room1.delete2);
         Room1.dialoge.events.onInputDown.add(Room1.nothing3);
     },
+    help: function () {
+        Room1.unlock = game.add.sprite(200, 425, 'help_trigger');
+        Room1.unlock.width = 75
+        Room1.unlock.height = 75
+        Room1.unlock.inputEnabled = true;
+        Room1.unlock.events.onInputDown.add(this.kluch);
+    }
 }
