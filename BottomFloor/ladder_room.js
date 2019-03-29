@@ -80,7 +80,7 @@ var Ladder = {
         Ladder.dialoge.scale.setTo(1)
         Ladder.text1 = game.add.text(75, 40, '* Вам незачем возвращаться туда...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Ladder.dialoge.inputEnabled = true;
-        Ladder.dialoge.events.onInputDown.add(Room3.delete);
+        Ladder.dialoge.events.onInputDown.add(Ladder.delete);
     },
     ended: function() {
         Ladder.dialoge = game.add.sprite(0, 0, 'dialoge');
