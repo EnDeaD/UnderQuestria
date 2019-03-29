@@ -1,6 +1,9 @@
 var Room4 = {
     preload: function () {
-        game.load.image('trigger', 'triggers/trigger.png');
+        game.load.image('trigger', 'triggers/shine.png');
+        game.load.image('htrigger', 'triggers/trigger.png');
+        game.load.image('exit', 'triggers/shines.png');
+        game.load.image('lock', 'triggers/lock.png');
         game.load.image('bg', 'assets/monochrome_kitchen_room.png');
         game.load.image('dialoge', 'assets/dialoge1.png');
 
@@ -13,7 +16,7 @@ var Room4 = {
         this.background = game.add.sprite(75, 111, 'bg');
         this.background.scale.setTo(3, 3);
 
-        this.backdoor = game.add.sprite(200, game.world.height-75, 'trigger');
+        this.backdoor = game.add.sprite(200, game.world.height-75, 'exit');
         this.backdoor.width = 150
         this.backdoor.height = 75
         this.backdoor.inputEnabled = true;
