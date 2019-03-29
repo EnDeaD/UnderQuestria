@@ -1,8 +1,9 @@
 var Room1 = {
     preload: function () {
         game.load.image('trigger', 'triggers/shine.png');
-        game.load.image('help_trigger', 'triggers/shine1.png');
         game.load.image('htrigger', 'triggers/trigger.png');
+        game.load.image('exit', 'triggers/shines.png');
+        game.load.image('lock', 'triggers/lock.png');
         game.load.image('bg', 'assets/monochrome_small_room.png');
         game.load.image('dialoge', 'assets/dialoge1.png');
     },
@@ -15,8 +16,9 @@ var Room1 = {
         game.stage.backgroundColor = "#4a4a4a";
         this.background = game.add.sprite(75, 10, 'bg');
         this.background.scale.setTo(3, 3)
-
-        this.door = game.add.sprite(510, 525, 'trigger');
+        
+        this.door = game.add.sprite(510, 525, 'exit');
+        this.door = game.add.sprite(525, 525, 'lock');
         this.door.width = 140
         this.door.height = 100
         this.door.inputEnabled = true;
@@ -36,7 +38,6 @@ var Room1 = {
             this.unlock.height = 75
             this.unlock.inputEnabled = true;
             this.unlock.events.onInputDown.add(this.kluch);
-            game.time.events.add(Phaser.Timer.SECOND * 3, this.help, this);
 
             this.btn = game.add.sprite(635, 90, 'trigger');
             this.btn.width = 50
@@ -292,11 +293,4 @@ var Room1 = {
         Room1.dialoge.events.onInputDown.add(Room1.delete2);
         Room1.dialoge.events.onInputDown.add(Room1.nothing3);
     },
-    help: function () {
-        Room1.unlock = game.add.sprite(200, 425, 'help_trigger');
-        Room1.unlock.width = 75
-        Room1.unlock.height = 75
-        Room1.unlock.inputEnabled = true;
-        Room1.unlock.events.onInputDown.add(this.kluch);
-    }
 }
