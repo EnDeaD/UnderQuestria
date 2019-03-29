@@ -19,5 +19,6 @@ var TheEnd = {
     },
     clicked: function() {
         game.state.start('menu');
+        Continue = true;
     }
 }
