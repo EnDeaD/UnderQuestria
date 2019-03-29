@@ -17,7 +17,7 @@ var Room2 = {
         this.background.scale.setTo(2.5)
 
         this.door = game.add.sprite(750, 360, 'exit');
-        this.door.width = 50
+        this.door.width = 100
         this.door.height = 160
         this.door.inputEnabled = true;
         this.door.events.onInputDown.add(this.nextRoom);
@@ -36,25 +36,27 @@ var Room2 = {
             this.btn.events.onInputDown.add(this.fireplace);
             
             this.locker = game.add.sprite(750, 400, 'lock');
-            this.lock1 = game.add.sprite(700, 350, 'trigger');
+            this.locker.scale.setTo(0.25)
+            
+            this.lock1 = game.add.sprite(750, 350, 'htrigger');
             this.lock1.width = 100
             this.lock1.height = 170
             this.lock1.inputEnabled = true;
             this.lock1.events.onInputDown.add(this.locked);
 
-            this.lock2 = game.add.sprite(700, 350, 'trigger');
+            this.lock2 = game.add.sprite(750, 350, 'htrigger');
             this.lock2.width = 100
             this.lock2.height = 170
             this.lock2.inputEnabled = true;
             this.lock2.events.onInputDown.add(this.locked);
 
-            this.lock3 = game.add.sprite(700, 350, 'trigger');
+            this.lock3 = game.add.sprite(750, 350, 'htrigger');
             this.lock3.width = 100
             this.lock3.height = 170
             this.lock3.inputEnabled = true;
             this.lock3.events.onInputDown.add(this.locked);
 
-            this.lock4 = game.add.sprite(700, 350, 'trigger');
+            this.lock4 = game.add.sprite(750, 350, 'htrigger');
             this.lock4.width = 100
             this.lock4.height = 170
             this.lock4.inputEnabled = true;
