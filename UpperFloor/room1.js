@@ -83,7 +83,7 @@ var Room1 = {
             this.btn.height = 50
             this.btn.inputEnabled = true;
             this.btn.events.onInputDown.add(this.shoes);
-        },
+        }
         if (looked == true){
             this.btn = game.add.sprite(125, 200, 'triggered');
             this.btn.width = 100
