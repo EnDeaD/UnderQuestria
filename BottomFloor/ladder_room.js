@@ -99,4 +99,8 @@ var Ladder = {
         Ladder.text3.kill();
         Ladder.text4.kill();
     },
+        delete:function(){
+        Room1.dialoge.kill();
+        Room1.text1.kill();
+    },
 }
