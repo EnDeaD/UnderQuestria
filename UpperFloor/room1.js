@@ -72,6 +72,12 @@ var Room1 = {
             this.btn.inputEnabled = true;
             this.btn.events.onInputDown.add(this.toys);
 
+            this.btn = game.add.sprite(125, 200, 'trigger');
+            this.btn.width = 100
+            this.btn.height = 150
+            this.btn.inputEnabled = true;
+            this.btn.events.onInputDown.add(this.bedone);
+            
             this.btn = game.add.sprite(525, 200, 'trigger');
             this.btn.width = 100
             this.btn.height = 150
@@ -83,19 +89,6 @@ var Room1 = {
             this.btn.height = 50
             this.btn.inputEnabled = true;
             this.btn.events.onInputDown.add(this.shoes);
-        }
-        if (looked == true){
-            this.btn = game.add.sprite(125, 200, 'triggered');
-            this.btn.width = 100
-            this.btn.height = 150
-            this.btn.inputEnabled = true;
-            this.btn.events.onInputDown.add(this.bedone);
-        } else {
-            this.btn = game.add.sprite(125, 200, 'trigger');
-            this.btn.width = 100
-            this.btn.height = 150
-            this.btn.inputEnabled = true;
-            this.btn.events.onInputDown.add(this.bedone);
         }
     },
     update: function () {
@@ -236,6 +229,12 @@ var Room1 = {
         Room1.dialoge.events.onInputDown.add(Room1.nothing2);
     },
     bedone: function () {
+        Room1.btn1 = game.add.sprite(125, 200, 'triggered');
+        Room1.btn1.width = 100
+        Room1.btn1.height = 150
+        Room1.btn1.inputEnabled = true;
+        Room1.btn.events.onInputDown.add(this.bedone);
+        Room1.btn.kill();
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
         Room1.dialoge.scale.setTo(1)
         Room1.text1 = game.add.text(75, 40, '* Это кровать, на которой вы проснулись...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
