@@ -1,6 +1,7 @@
 var Room1 = {
     preload: function () {
         game.load.image('trigger', 'triggers/shine.png');
+        game.load.image('triggered', 'triggers/shines.png');
         game.load.image('bg', 'assets/monochrome_small_room.png');
         game.load.image('dialoge', 'assets/dialoge1.png');
     },
@@ -8,6 +9,7 @@ var Room1 = {
     background: null,
     name: null,
     dialoge: null,
+    looked: null,
     create: function () {
         game.stage.backgroundColor = "#4a4a4a";
         this.background = game.add.sprite(75, 10, 'bg');
@@ -52,12 +54,6 @@ var Room1 = {
             this.btn.inputEnabled = true;
             this.btn.events.onInputDown.add(this.picture);
 
-            this.btn = game.add.sprite(125, 200, 'trigger');
-            this.btn.width = 100
-            this.btn.height = 150
-            this.btn.inputEnabled = true;
-            this.btn.events.onInputDown.add(this.bedone);
-
             this.btn = game.add.sprite(235, 85, 'trigger');
             this.btn.width = 55
             this.btn.height = 70
@@ -81,12 +77,26 @@ var Room1 = {
             this.btn.height = 150
             this.btn.inputEnabled = true;
             this.btn.events.onInputDown.add(this.bedtwo);
-
+            
             this.btn = game.add.sprite(295, 175, 'trigger');
             this.btn.width = 110
             this.btn.height = 50
             this.btn.inputEnabled = true;
             this.btn.events.onInputDown.add(this.shoes);
+            
+            if (looked == true){
+                this.btn = game.add.sprite(125, 200, 'triggered');
+                this.btn.width = 100
+                this.btn.height = 150
+                this.btn.inputEnabled = true;
+                this.btn.events.onInputDown.add(this.bedone);
+            } else {
+                this.btn = game.add.sprite(125, 200, 'trigger');
+                this.btn.width = 100
+                this.btn.height = 150
+                this.btn.inputEnabled = true;
+                this.btn.events.onInputDown.add(this.bedone);
+            }
         }
     },
     update: function () {
@@ -167,6 +177,7 @@ var Room1 = {
         Room1.text1 = game.add.text(75, 40, '* Ничего не произошло...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room1.dialoge.inputEnabled = true;
         Room1.dialoge.events.onInputDown.add(Room1.delete);
+        Room1.looked = true;
     },
     nothing1: function () {
         Room1.dialoge = game.add.sprite(0, 0, 'dialoge');
