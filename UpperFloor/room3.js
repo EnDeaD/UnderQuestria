@@ -1,6 +1,9 @@
 var Room3 = {
     preload: function () {
         game.load.image('trigger', 'triggers/shine.png');
+        game.load.image('htrigger', 'triggers/trigger.png');
+        game.load.image('exit', 'triggers/shines.png');
+        game.load.image('lock', 'triggers/lock.png');
         game.load.image('bg', 'assets/monochrome_main_room.png');
         game.load.image('dialoge', 'assets/dialoge1.png');
     },
@@ -12,37 +15,39 @@ var Room3 = {
         this.background = game.add.sprite(0, 0, 'bg');
         this.background.scale.setTo(2.5)
 
-        this.door = game.add.sprite(700, 370, 'trigger');
+        this.door = game.add.sprite(700, 370, 'exit');
         this.door.width = 100
         this.door.height = 140
         this.door.inputEnabled = true;
         this.door.events.onInputDown.add(this.nextRoom);
 
-        this.backdoor = game.add.sprite(0, game.world.centerY+60, 'trigger');
+        this.backdoor = game.add.sprite(0, game.world.centerY+60, 'exit');
         this.backdoor.width = 100
         this.backdoor.height = 150
         this.backdoor.inputEnabled = true;
         this.backdoor.events.onInputDown.add(this.backRoom);
 
-        this.secondDoor = game.add.sprite(game.world.centerX-50, game.world.height-75, 'trigger');
+        this.secondDoor = game.add.sprite(game.world.centerX-50, game.world.height-75, 'exit');
         this.secondDoor.width = 100
         this.secondDoor.height = 75
         this.secondDoor.inputEnabled = true;
         this.secondDoor.events.onInputDown.add(this.secondRoom);
 
-        this.secondFloor = game.add.sprite(game.world.centerX-200, 150, 'trigger');
+        this.secondFloor = game.add.sprite(game.world.centerX-200, 150, 'exit');
         this.secondFloor.width = 330
         this.secondFloor.height = 230
         this.secondFloor.inputEnabled = true;
         this.secondFloor.events.onInputDown.add(this.changeFloor);
 
-            if(floor1un == false){
-                this.floorLock = game.add.sprite(game.world.centerX-200, 150, 'trigger');
-                this.floorLock.width = 330
-                this.floorLock.height = 230
-                this.floorLock.inputEnabled = true;
-                this.floorLock.events.onInputDown.add(this.massage);
-            }
+        if(floor1un == false){
+            this.locker = game.add.sprite(game.world.centerX-25, 250, 'lock');
+            this.locker.scale.setTo(0.25)
+            this.floorLock = game.add.sprite(game.world.centerX-200, 150, 'htrigger');
+            this.floorLock.width = 330
+            this.floorLock.height = 230
+            this.floorLock.inputEnabled = true;
+            this.floorLock.events.onInputDown.add(this.massage);
+        }
     },
     update: function () {
 
