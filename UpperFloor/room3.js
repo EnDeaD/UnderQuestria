@@ -47,11 +47,15 @@ var Room3 = {
             this.floorLock.height = 230
             this.floorLock.inputEnabled = true;
             this.floorLock.events.onInputDown.add(this.massage);
+            if(floor1un == true){
+                Room3.locker.kill();
+            }
         }
     },
     update: function () {
 
     },
+
     massage:function(){
         Room3.dialoge = game.add.sprite(0, 0, 'dialoge');
         dialog = false;
