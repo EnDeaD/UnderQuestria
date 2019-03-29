@@ -1,8 +1,10 @@
 var Room2 = {
     preload: function () {
-        game.load.image('ttrigger', 'triggers/test_trigger.png');
-        game.load.image('trigger', 'triggers/trigger.png');
-        game.load.image('bg', 'assets/monochrome_living_room.png');
+        game.load.image('bg', 'assets/monochrome_living_room.png');        
+        game.load.image('trigger', 'triggers/shine.png');
+        game.load.image('htrigger', 'triggers/trigger.png');
+        game.load.image('exit', 'triggers/shines.png');
+        game.load.image('lock', 'triggers/lock.png');
         game.load.image('dialoge', 'assets/dialoge1.png');
     },
     door: null,
@@ -14,13 +16,13 @@ var Room2 = {
         this.background = game.add.sprite(0, 0, 'bg');
         this.background.scale.setTo(2.5)
 
-        this.door = game.add.sprite(700, 350, 'trigger');
+        this.door = game.add.sprite(700, 350, 'exit');
         this.door.width = 100
         this.door.height = 170
         this.door.inputEnabled = true;
         this.door.events.onInputDown.add(this.nextRoom);
 
-        this.backdoor = game.add.sprite(100, 0, 'trigger');
+        this.backdoor = game.add.sprite(100, 0, 'exit');
         this.backdoor.width = 140
         this.backdoor.height = 150
         this.backdoor.inputEnabled = true;
@@ -57,7 +59,7 @@ var Room2 = {
             this.lock4.inputEnabled = true;
             this.lock4.events.onInputDown.add(this.locked);
 
-            this.unlock1 = game.add.sprite(385, 135, 'trigger');
+            this.unlock1 = game.add.sprite(385, 135, 'htrigger');
             this.unlock1.width = 70
             this.unlock1.height = 50
             this.unlock1.inputEnabled = true;
@@ -75,7 +77,7 @@ var Room2 = {
             this.btn.inputEnabled = true;
             this.btn.events.onInputDown.add(this.bookcase);
 
-            this.unlock2 = game.add.sprite(630, 60, 'trigger');
+            this.unlock2 = game.add.sprite(630, 60, 'htrigger');
             this.unlock2.width = 40
             this.unlock2.height = 40
             this.unlock2.inputEnabled = true;
@@ -87,13 +89,13 @@ var Room2 = {
             this.btn.inputEnabled = true;
             this.btn.events.onInputDown.add(this.floor);
 
-            this.unlock3 = game.add.sprite(200, 425, 'trigger');
+            this.unlock3 = game.add.sprite(200, 425, 'htrigger');
             this.unlock3.width = 75
             this.unlock3.height = 75
             this.unlock3.inputEnabled = true;
             this.unlock3.events.onInputDown.add(this.plank);
 
-            this.unlock4 = game.add.sprite(100, 0, 'trigger');
+            this.unlock4 = game.add.sprite(100, 0, 'htrigger');
             this.unlock4.width = 140
             this.unlock4.height = 150
             this.unlock4.inputEnabled = true;
