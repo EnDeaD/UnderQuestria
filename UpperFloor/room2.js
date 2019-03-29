@@ -23,7 +23,7 @@ var Room2 = {
         this.door.events.onInputDown.add(this.nextRoom);
 
         this.backdoor = game.add.sprite(110, 0, 'exit');
-        this.backdoor.width = 125
+        this.backdoor.width = 110
         this.backdoor.height = 150
         this.backdoor.inputEnabled = true;
         this.backdoor.events.onInputDown.add(this.backRoom);
