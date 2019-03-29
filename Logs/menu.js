@@ -32,6 +32,14 @@ var Menu = {
         this.btn.scale.setTo(0.25, 0.1);
         this.btn.events.onInputDown.add(this.startGame);
         
+        if(Continue == true){
+            this.text = game.add.text(360, 275, 'Continue', { fontSize: '30px', fill: '#FF0', font: 'bold 30pt Pixel' });
+            this.btn = game.add.sprite(375, 275, 'btn');
+            this.btn.inputEnabled = true;
+            this.btn.scale.setTo(0.25, 0.1);
+            this.btn.events.onInputDown.add(this.continueGame);
+        }
+        
         this.text = game.add.text(210, 580, 'UNDERQUESTRIA V0.33 (C) DISCORDINGAMES 2019', { fontSize: '15px', fill: '#888', font: 'bold 15pt Pixel' });
         this.text = game.add.text(175, 560, '"UNDERTALE" & "MY LITTLE PONY" Сrossover (FAN-MADE)', { fontSize: '15px', fill: '#111', font: 'bold 15pt Pixel' });
         this.text = game.add.text(200, 200, 'Home - Somewhere', { fontSize: '30px', fill: '#FFF', font: 'bold 30pt Pixel' });
@@ -64,6 +72,9 @@ var Menu = {
     },
     startGame:function(){
         game.state.start('start');
+    },
+    continueGame:function(){
+        game.state.start('ladder');
     },
     words:function(){
         game.state.start('words');
