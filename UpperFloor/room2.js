@@ -17,15 +17,17 @@ var Room2 = {
         this.background = game.add.sprite(0, 0, 'bg');
         this.background.scale.setTo(2.5);
 
-        this.arrow = game.add.sprite(750, 360, 'exitr');
+        this.arrow = game.add.sprite(750, 400, 'exitr');
         this.arrow.scale.setTo(0.5);
         this.door = game.add.sprite(750, 360, 'htrigger');
         this.door.width = 100
         this.door.height = 160
         this.door.inputEnabled = true;
         this.door.events.onInputDown.add(this.nextRoom);
-
-        this.backdoor = game.add.sprite(110, 0, 'exitu');
+        
+        this.arrow = game.add.sprite(125, 25, 'exitu');
+        this.arrow.scale.setTo(0.5);
+        this.backdoor = game.add.sprite(110, 0, 'htrigger');
         this.backdoor.width = 110
         this.backdoor.height = 150
         this.backdoor.inputEnabled = true;
