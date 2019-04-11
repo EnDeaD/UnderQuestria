@@ -19,8 +19,8 @@ var Room2 = {
 
         this.arrow = game.add.sprite(game.world.width-60, 400, 'exitr');
         this.arrow.scale.setTo(0.5);
-        this.door = game.add.sprite(750, 360, 'htrigger');
-        this.door.width = 100
+        this.door = game.add.sprite(740, 360, 'htrigger');
+        this.door.width = 110
         this.door.height = 160
         this.door.inputEnabled = true;
         this.door.events.onInputDown.add(this.nextRoom);
@@ -40,11 +40,11 @@ var Room2 = {
             this.btn.inputEnabled = true;
             this.btn.events.onInputDown.add(this.fireplace);
             
-            this.locker = game.add.sprite(750, 400, 'lock');
+            this.locker = game.add.sprite(740, 400, 'lock');
             this.locker.scale.setTo(0.25)
             
-            this.lock1 = game.add.sprite(750, 350, 'htrigger');
-            this.lock1.width = 100
+            this.lock1 = game.add.sprite(740, 350, 'htrigger');
+            this.lock1.width = 110
             this.lock1.height = 170
             this.lock1.inputEnabled = true;
             this.lock1.events.onInputDown.add(this.locked);
