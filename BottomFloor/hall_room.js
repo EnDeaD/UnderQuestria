@@ -9,7 +9,7 @@ var Hall = {
     name: null,
     create: function () {
         game.stage.backgroundColor = "#000";
-        this.background = game.add.sprite(0, game.world.centerY-5, 'bg');
+        this.background = game.add.sprite(0, game.world.centerY+25, 'bg');
         this.background.scale.setTo(1.08);
 
         this.backdoor = game.add.sprite(0, 370, 'trigger');
@@ -18,19 +18,19 @@ var Hall = {
         this.backdoor.inputEnabled = true;
         this.backdoor.events.onInputDown.add(this.backRoom);
 
-        this.firstdoor = game.add.sprite(game.world.centerX-235, game.world.centerY+22.5, 'trigger');
+        this.firstdoor = game.add.sprite(game.world.centerX-235, game.world.centerY+52.5, 'trigger');
         this.firstdoor.width = 40
         this.firstdoor.height = 55
         this.firstdoor.inputEnabled = true;
         this.firstdoor.events.onInputDown.add(this.firstRoom);
 
-        this.seconddoor = game.add.sprite(game.world.centerX-10, game.world.centerY+22.5, 'trigger');
+        this.seconddoor = game.add.sprite(game.world.centerX-10, game.world.centerY+52.5, 'trigger');
         this.seconddoor.width = 40
         this.seconddoor.height = 55
         this.seconddoor.inputEnabled = true;
         this.seconddoor.events.onInputDown.add(this.secondRoom);
 
-        this.thirddoor = game.add.sprite(game.world.centerX+215, game.world.centerY+22.5, 'trigger');
+        this.thirddoor = game.add.sprite(game.world.centerX+215, game.world.centerY+52.5, 'trigger');
         this.thirddoor.width = 40
         this.thirddoor.height = 55
         this.thirddoor.inputEnabled = true;
