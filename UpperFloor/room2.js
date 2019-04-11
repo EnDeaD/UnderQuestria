@@ -25,7 +25,7 @@ var Room2 = {
         this.door.inputEnabled = true;
         this.door.events.onInputDown.add(this.nextRoom);
         
-        this.arrow = game.add.sprite(140, 40, 'exitu');
+        this.arrow = game.add.sprite(135, 40, 'exitu');
         this.arrow.scale.setTo(0.5);
         this.backdoor = game.add.sprite(110, 0, 'htrigger');
         this.backdoor.width = 110
