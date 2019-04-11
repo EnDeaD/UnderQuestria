@@ -14,9 +14,11 @@ var Room2 = {
     create: function () {
         game.stage.backgroundColor = "#4a4a4a";
         this.background = game.add.sprite(0, 0, 'bg');
-        this.background.scale.setTo(2.5)
+        this.background.scale.setTo(2.5);
 
-        this.door = game.add.sprite(750, 360, 'exit');
+        this.arrow = game.add.sprite(750, 360, 'exit');
+        this.arrow.scale.setTo(0.5);
+        this.door = game.add.sprite(750, 360, 'htrigger');
         this.door.width = 100
         this.door.height = 160
         this.door.inputEnabled = true;
