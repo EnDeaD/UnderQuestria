@@ -41,7 +41,7 @@ var Room3 = {
         this.secondDoor.inputEnabled = true;
         this.secondDoor.events.onInputDown.add(this.secondRoom);
 
-        this.arrow = game.add.sprite(game.world.centerX-170, 170, 'exitd');
+        this.arrow = game.add.sprite(game.world.centerX-180, 210, 'exitd');
         this.arrow.scale.setTo(0.5);
         this.secondFloor = game.add.sprite(game.world.centerX-200, 150, 'htrigger');
         this.secondFloor.width = 330
