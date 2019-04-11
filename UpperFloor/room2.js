@@ -3,7 +3,8 @@ var Room2 = {
         game.load.image('bg', 'assets/monochrome_living_room.png');        
         game.load.image('trigger', 'triggers/shine.png');
         game.load.image('htrigger', 'triggers/trigger.png');
-        game.load.image('exit', 'triggers/arri.png');
+        game.load.image('exitr', 'triggers/arri.png');
+        game.load.image('exitu', 'triggers/arup.png');
         game.load.image('lock', 'triggers/lock.png');
         game.load.image('dialoge', 'assets/dialoge1.png');
     },
@@ -16,7 +17,7 @@ var Room2 = {
         this.background = game.add.sprite(0, 0, 'bg');
         this.background.scale.setTo(2.5);
 
-        this.arrow = game.add.sprite(750, 360, 'exit');
+        this.arrow = game.add.sprite(750, 360, 'exitr');
         this.arrow.scale.setTo(0.5);
         this.door = game.add.sprite(750, 360, 'htrigger');
         this.door.width = 100
@@ -24,7 +25,7 @@ var Room2 = {
         this.door.inputEnabled = true;
         this.door.events.onInputDown.add(this.nextRoom);
 
-        this.backdoor = game.add.sprite(110, 0, 'exit');
+        this.backdoor = game.add.sprite(110, 0, 'exitu');
         this.backdoor.width = 110
         this.backdoor.height = 150
         this.backdoor.inputEnabled = true;
