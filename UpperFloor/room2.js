@@ -40,7 +40,7 @@ var Room2 = {
             this.btn.inputEnabled = true;
             this.btn.events.onInputDown.add(this.fireplace);
             
-            this.locker = game.add.sprite(750, 410, 'lock');
+            this.locker = game.add.sprite(750, 400, 'lock');
             this.locker.scale.setTo(0.25)
             
             this.lock1 = game.add.sprite(750, 350, 'htrigger');
