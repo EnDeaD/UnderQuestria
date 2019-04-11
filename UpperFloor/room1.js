@@ -30,7 +30,7 @@ var Room1 = {
             
             this.locker = game.add.sprite(555, 525, 'lock');
             this.locker.scale.setTo(0.25)
-            this.lock = game.add.sprite(510, 525, 'trigger');
+            this.lock = game.add.sprite(510, 525, 'htrigger');
             this.lock.width = 140
             this.lock.height = 100
             this.lock.inputEnabled = true;
