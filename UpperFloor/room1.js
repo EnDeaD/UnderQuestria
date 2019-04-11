@@ -17,7 +17,7 @@ var Room1 = {
         this.background = game.add.sprite(75, 10, 'bg');
         this.background.scale.setTo(3, 3)
         
-        this.arrow = game.add.sprite(520, game.world.height-60, 'exit');
+        this.arrow = game.add.sprite(550, game.world.height-60, 'exit');
         this.arrow.scale.setTo(0.5);
         this.door = game.add.sprite(510, 525, 'htrigger');
         this.door.width = 140
