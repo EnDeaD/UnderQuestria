@@ -12,7 +12,7 @@ var Hall = {
         this.background = game.add.sprite(0, game.world.centerY-5, 'bg');
         this.background.scale.setTo(1.08);
 
-        this.door = game.add.sprite(0, 370, 'trigger');
+        this.backdoor = game.add.sprite(0, 370, 'trigger');
         this.backdoor.width = 50
         this.backdoor.height = 75
         this.backdoor.inputEnabled = true;
