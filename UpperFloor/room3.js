@@ -17,7 +17,7 @@ var Room3 = {
         this.background = game.add.sprite(0, 0, 'bg');
         this.background.scale.setTo(2.5)
 
-        this.arrow = game.add.sprite(750, 360, 'exitr');
+        this.arrow = game.add.sprite(game.world.width-60, 400, 'exitr');
         this.arrow.scale.setTo(0.5);
         this.door = game.add.sprite(700, 370, 'htrigger');
         this.door.width = 100
@@ -25,7 +25,7 @@ var Room3 = {
         this.door.inputEnabled = true;
         this.door.events.onInputDown.add(this.nextRoom);
 
-        this.arrow = game.add.sprite(0, game.world.centerY+30, 'exitl');
+        this.arrow = game.add.sprite(15, game.world.centerY+120, 'exitl');
         this.arrow.scale.setTo(0.5);
         this.backdoor = game.add.sprite(0, game.world.centerY+60, 'htrigger');
         this.backdoor.width = 100
@@ -33,7 +33,7 @@ var Room3 = {
         this.backdoor.inputEnabled = true;
         this.backdoor.events.onInputDown.add(this.backRoom);
 
-        this.arrow = game.add.sprite(game.world.centerX-30, game.world.height-30, 'exitd');
+        this.arrow = game.add.sprite(game.world.centerX-30, game.world.height-70, 'exitd');
         this.arrow.scale.setTo(0.5);
         this.secondDoor = game.add.sprite(game.world.centerX-50, game.world.height-75, 'htrigger');
         this.secondDoor.width = 100
@@ -41,7 +41,7 @@ var Room3 = {
         this.secondDoor.inputEnabled = true;
         this.secondDoor.events.onInputDown.add(this.secondRoom);
 
-        this.arrow = game.add.sprite(game.world.centerX-30, 270, 'exitd');
+        this.arrow = game.add.sprite(game.world.centerX-200, 200, 'exitd');
         this.arrow.scale.setTo(0.5);
         this.secondFloor = game.add.sprite(game.world.centerX-200, 150, 'htrigger');
         this.secondFloor.width = 330
