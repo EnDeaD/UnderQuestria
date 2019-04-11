@@ -41,7 +41,7 @@ var Room3 = {
         this.secondDoor.inputEnabled = true;
         this.secondDoor.events.onInputDown.add(this.secondRoom);
 
-        this.arrow = game.add.sprite(game.world.centerX-180, 225, 'exitd');
+        this.arrow = game.add.sprite(game.world.centerX-180, 230, 'exitd');
         this.arrow.scale.setTo(0.5);
         this.secondFloor = game.add.sprite(game.world.centerX-200, 150, 'htrigger');
         this.secondFloor.width = 330
@@ -50,7 +50,7 @@ var Room3 = {
         this.secondFloor.events.onInputDown.add(this.changeFloor);
 
         if(floor1un == false){
-            this.locker = game.add.sprite(game.world.centerX-175, 235, 'lock');
+            this.locker = game.add.sprite(game.world.centerX-176, 235, 'lock');
             this.locker.scale.setTo(0.25)
             this.floorLock = game.add.sprite(game.world.centerX-200, 150, 'htrigger');
             this.floorLock.width = 330
