@@ -2,7 +2,9 @@ var Room3 = {
     preload: function () {
         game.load.image('trigger', 'triggers/shine.png');
         game.load.image('htrigger', 'triggers/trigger.png');
-        game.load.image('exit', 'triggers/shines.png');
+        game.load.image('exitd', 'triggers/ardo.png');
+        game.load.image('exitl', 'triggers/arle.png');
+        game.load.image('exitr', 'triggers/arri.png');
         game.load.image('lock', 'triggers/lock.png');
         game.load.image('bg', 'assets/monochrome_main_room.png');
         game.load.image('dialoge', 'assets/dialoge1.png');
@@ -15,25 +17,27 @@ var Room3 = {
         this.background = game.add.sprite(0, 0, 'bg');
         this.background.scale.setTo(2.5)
 
-        this.door = game.add.sprite(700, 370, 'exit');
+        this.arrow = game.add.sprite(750, 360, 'exitr');
+        this.arrow.scale.setTo(0.5);
+        this.door = game.add.sprite(700, 370, 'htrigger');
         this.door.width = 100
         this.door.height = 140
         this.door.inputEnabled = true;
         this.door.events.onInputDown.add(this.nextRoom);
 
-        this.backdoor = game.add.sprite(0, game.world.centerY+60, 'exit');
+        this.backdoor = game.add.sprite(0, game.world.centerY+60, 'exitl');
         this.backdoor.width = 100
         this.backdoor.height = 150
         this.backdoor.inputEnabled = true;
         this.backdoor.events.onInputDown.add(this.backRoom);
 
-        this.secondDoor = game.add.sprite(game.world.centerX-50, game.world.height-75, 'exit');
+        this.secondDoor = game.add.sprite(game.world.centerX-50, game.world.height-75, 'exitd');
         this.secondDoor.width = 100
         this.secondDoor.height = 75
         this.secondDoor.inputEnabled = true;
         this.secondDoor.events.onInputDown.add(this.secondRoom);
 
-        this.secondFloor = game.add.sprite(game.world.centerX-200, 150, 'exit');
+        this.secondFloor = game.add.sprite(game.world.centerX-200, 150, 'exitd');
         this.secondFloor.width = 330
         this.secondFloor.height = 230
         this.secondFloor.inputEnabled = true;
