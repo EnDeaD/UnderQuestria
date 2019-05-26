@@ -90,9 +90,9 @@ var Room4 = {
     nothing2: function () {
         Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
         Room4.dialoge.scale.setTo(1)
-        Room1.text1 = game.add.text(75, 40, '* Это не выход...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-        Room1.dialoge.inputEnabled = true;
-        Room1.dialoge.events.onInputDown.add(Room4.delete);
+        Room4.text1 = game.add.text(75, 40, '* Это не выход...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.dialoge.inputEnabled = true;
+        Room4.dialoge.events.onInputDown.add(Room4.delete);
     },
     nothing3: function () {
         Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
