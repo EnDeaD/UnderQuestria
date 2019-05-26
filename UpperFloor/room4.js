@@ -31,14 +31,14 @@ var Room4 = {
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.nothing);
         
-        this.btn = game.add.sprite(150, 250, 'ttrigger');
+        this.btn = game.add.sprite(150, 270, 'ttrigger');
         this.btn.width = 85
-        this.btn.height = 100
+        this.btn.height = 95
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.nothing);
         
-        this.btn = game.add.sprite(270, 265, 'ttrigger');
-        this.btn.width = 75
+        this.btn = game.add.sprite(250, 250, 'ttrigger');
+        this.btn.width = 80
         this.btn.height = 100
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.nothing);
