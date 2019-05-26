@@ -146,7 +146,7 @@ var Room4 = {
         Room4.dialoge.scale.setTo(1)
         Room4.text1 = game.add.text(75, 40, '* Вода начала стремительно заполнять раковинку до', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room4.text2 = game.add.text(75, 80, 'самых краёв. Кажется, что она вот вот перельётся', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-        Room4.text3 = game.add.text(75, 80, 'через край и затопит комнату...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text3 = game.add.text(75, 120, 'через край и затопит комнату...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room4.dialoge.inputEnabled = true;
         Room4.dialoge.events.onInputDown.add(Room4.delete2);
         Room4.dialoge.events.onInputDown.add(Room4.fuse);
