@@ -38,8 +38,8 @@ var Room4 = {
         this.btn.events.onInputDown.add(this.nothing);
         
         this.btn = game.add.sprite(115, 125, 'ttrigger');
-        this.btn.width = 500
-        this.btn.height = 400
+        this.btn.width = 100
+        this.btn.height = 125
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.nothing);
     },
