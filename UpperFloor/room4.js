@@ -96,7 +96,7 @@ var Room4 = {
     },
     nothing3: function () {
         Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
-        Rooь4.dialoge.scale.setTo(1)
+        Room4.dialoge.scale.setTo(1)
         Room4.text1 = game.add.text(75, 40, '* Это не помогло...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room4.dialoge.inputEnabled = true;
         Room4.dialoge.events.onInputDown.add(Room4.delete);
