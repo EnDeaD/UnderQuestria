@@ -26,49 +26,49 @@ var Room4 = {
         this.backdoor.events.onInputDown.add(this.backRoom);
 
         
-        this.btn = game.add.sprite(150, 230, 'ttrigger');
+        this.btn = game.add.sprite(150, 230, 'trigger');
         this.btn.width = 85
         this.btn.height = 35
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.nothing);
         
-        this.btn = game.add.sprite(150, 270, 'ttrigger');
+        this.btn = game.add.sprite(150, 270, 'trigger');
         this.btn.width = 85
         this.btn.height = 85
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.nothing);
         
-        this.btn = game.add.sprite(255, 255, 'ttrigger');
+        this.btn = game.add.sprite(255, 255, 'trigger');
         this.btn.width = 80
         this.btn.height = 100
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.nothing);
         
-        this.btn = game.add.sprite(300, 165, 'ttrigger');
+        this.btn = game.add.sprite(300, 165, 'trigger');
         this.btn.width = 140
         this.btn.height = 65
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.nothing);
         
-        this.btn = game.add.sprite(345, 255, 'ttrigger');
+        this.btn = game.add.sprite(345, 255, 'trigger');
         this.btn.width = 160
         this.btn.height = 100
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.nothing);
         
-        this.btn = game.add.sprite(465, 150, 'ttrigger');
+        this.btn = game.add.sprite(465, 150, 'trigger');
         this.btn.width = 75
         this.btn.height = 75
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.nothing);
         
-        this.btn = game.add.sprite(510, 240, 'ttrigger');
+        this.btn = game.add.sprite(510, 240, 'trigger');
         this.btn.width = 95
         this.btn.height = 110
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.nothing);
         
-        this.btn = game.add.sprite(250, 360, 'ttrigger');
+        this.btn = game.add.sprite(250, 360, 'trigger');
         this.btn.width = 90
         this.btn.height = 40
         this.btn.inputEnabled = true;
