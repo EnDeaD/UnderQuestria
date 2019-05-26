@@ -48,25 +48,25 @@ var Room4 = {
         this.btn.width = 140
         this.btn.height = 65
         this.btn.inputEnabled = true;
-        this.btn.events.onInputDown.add(this.nothing);
+        this.btn.events.onInputDown.add(this.something);
         
         this.btn = game.add.sprite(345, 255, 'trigger');
         this.btn.width = 160
         this.btn.height = 100
         this.btn.inputEnabled = true;
-        this.btn.events.onInputDown.add(this.nothing);
+        this.btn.events.onInputDown.add(this.something);
         
         this.btn = game.add.sprite(465, 150, 'trigger');
         this.btn.width = 75
         this.btn.height = 75
         this.btn.inputEnabled = true;
-        this.btn.events.onInputDown.add(this.nothing);
+        this.btn.events.onInputDown.add(this.something);
         
         this.btn = game.add.sprite(510, 240, 'trigger');
         this.btn.width = 95
         this.btn.height = 110
         this.btn.inputEnabled = true;
-        this.btn.events.onInputDown.add(this.nothing);
+        this.btn.events.onInputDown.add(this.something);
         
         this.btn = game.add.sprite(250, 360, 'trigger');
         this.btn.width = 90
@@ -108,7 +108,6 @@ var Room4 = {
         Room4.dialoge.inputEnabled = true;
         Room4.dialoge.events.onInputDown.add(Room4.delete);
         Room4.dialoge.events.onInputDown.add(Room4.freeze);
-        floor1un = true
     },
     freeze: function () {
         Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
