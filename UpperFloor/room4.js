@@ -1,7 +1,8 @@
 var Room4 = {
     preload: function () {
         game.load.image('trigger', 'triggers/shine.png');
-        game.load.image('htrigger', 'triggers/test_trigger.png');
+        game.load.image('ttrigger', 'triggers/test_trigger.png');
+        game.load.image('htrigger', 'triggers/trigger.png');
         game.load.image('exitd', 'triggers/ardo.png');
         game.load.image('lock', 'triggers/lock.png');
         game.load.image('bg', 'assets/monochrome_kitchen_room.png');
@@ -24,19 +25,19 @@ var Room4 = {
         this.backdoor.inputEnabled = true;
         this.backdoor.events.onInputDown.add(this.backRoom);
 
-        this.btn = game.add.sprite(125, 150, 'trigger');
-        this.btn.width = 75
+        this.btn = game.add.sprite(135, 200, 'ttrigger');
+        this.btn.width = 100
         this.btn.height = 50
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.nothing);
         
-        this.btn = game.add.sprite(125, 155, 'trigger');
-        this.btn.width = 75
-        this.btn.height = 100
+        this.btn = game.add.sprite(135, 205, 'ttrigger');
+        this.btn.width = 100
+        this.btn.height = 150
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.nothing);
         
-        this.btn = game.add.sprite(115, 125, 'trigger');
+        this.btn = game.add.sprite(115, 125, 'ttrigger');
         this.btn.width = 500
         this.btn.height = 400
         this.btn.inputEnabled = true;
