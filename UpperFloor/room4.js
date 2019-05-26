@@ -25,6 +25,7 @@ var Room4 = {
         this.backdoor.inputEnabled = true;
         this.backdoor.events.onInputDown.add(this.backRoom);
 
+        
         this.btn = game.add.sprite(150, 230, 'ttrigger');
         this.btn.width = 85
         this.btn.height = 35
@@ -44,7 +45,7 @@ var Room4 = {
         this.btn.events.onInputDown.add(this.nothing);
         
         this.btn = game.add.sprite(300, 165, 'ttrigger');
-        this.btn.width = 135
+        this.btn.width = 140
         this.btn.height = 65
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.nothing);
@@ -68,7 +69,7 @@ var Room4 = {
         this.btn.events.onInputDown.add(this.nothing);
         
         this.btn = game.add.sprite(250, 360, 'ttrigger');
-        this.btn.width = 100
+        this.btn.width = 90
         this.btn.height = 40
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.nothing);
