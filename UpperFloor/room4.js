@@ -25,19 +25,19 @@ var Room4 = {
         this.backdoor.inputEnabled = true;
         this.backdoor.events.onInputDown.add(this.backRoom);
 
-        this.btn = game.add.sprite(135, 200, 'ttrigger');
-        this.btn.width = 100
-        this.btn.height = 50
+        this.btn = game.add.sprite(150, 240, 'ttrigger');
+        this.btn.width = 85
+        this.btn.height = 30
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.nothing);
         
-        this.btn = game.add.sprite(135, 205, 'ttrigger');
-        this.btn.width = 100
-        this.btn.height = 150
+        this.btn = game.add.sprite(150, 245, 'ttrigger');
+        this.btn.width = 85
+        this.btn.height = 100
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.nothing);
         
-        this.btn = game.add.sprite(115, 125, 'ttrigger');
+        this.btn = game.add.sprite(170, 230, 'ttrigger');
         this.btn.width = 100
         this.btn.height = 125
         this.btn.inputEnabled = true;
