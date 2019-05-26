@@ -144,9 +144,9 @@ var Room4 = {
     water: function () {
         Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
         Room4.dialoge.scale.setTo(1)
-        Room4.text1 = game.add.text(75, 40, '* Вода начала стремительно заполнять раковинку до', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-        Room4.text2 = game.add.text(75, 80, 'самых краёв. Кажется, что она вот вот перельётся', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-        Room4.text3 = game.add.text(75, 120, 'через край и затопит комнату...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text1 = game.add.text(75, 40, '* Вода начала стремительно заполнять раковинку до самых краёв.', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text2 = game.add.text(75, 80, 'Кажется, что она вот вот перельётся через край и затопит комнату...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text3 = game.add.text(75, 120, '', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room4.dialoge.inputEnabled = true;
         Room4.dialoge.events.onInputDown.add(Room4.delete2);
         Room4.dialoge.events.onInputDown.add(Room4.fuse);
@@ -154,8 +154,8 @@ var Room4 = {
     fuse: function () {
         Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
         Room4.dialoge.scale.setTo(1)
-        Room4.text1 = game.add.text(75, 40, '* Внезапно вода остановилась у самого края', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-        Room4.text2 = game.add.text(75, 80, 'благодаря системе слива...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text1 = game.add.text(75, 40, '* Внезапно вода остановилась у самого края, благодаря системе слива...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text2 = game.add.text(75, 80, '', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room4.dialoge.inputEnabled = true;
         Room4.dialoge.events.onInputDown.add(Room4.delete1);
         Room4.dialoge.events.onInputDown.add(Room4.nothing2);
