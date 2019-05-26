@@ -1,7 +1,7 @@
 var Room4 = {
     preload: function () {
         game.load.image('trigger', 'triggers/shine.png');
-        game.load.image('htrigger', 'triggers/t_trigger.png');
+        game.load.image('htrigger', 'triggers/test_trigger.png');
         game.load.image('exitd', 'triggers/ardo.png');
         game.load.image('lock', 'triggers/lock.png');
         game.load.image('bg', 'assets/monochrome_kitchen_room.png');
