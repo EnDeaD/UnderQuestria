@@ -214,7 +214,7 @@ var Room4 = {
         Room4.text1 = game.add.text(75, 40, '*Вы решли поискать немного пищи для мозга...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room4.text2 = game.add.text(75, 80, '(*Найдены кусочки шоколада*)');
         Room4.dialoge.inputEnabled = true;
-        Room4.dialoge.events.onInputDown.add(Room4.delete1);
+        Room4.dialoge.events.onInputDown.add(Room4.delete2);
         Room4.dialoge.events.onInputDown.add(Room4.thing);
     },
     thing: function () {
@@ -223,7 +223,7 @@ var Room4 = {
         Room4.text1 = game.add.text(75, 40, '*Вы перекусили и чувствуете, что вам стало полегче...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room4.text2 = game.add.text(75, 80, '(*Похоже, что это немного помогло...*)');
         Room4.dialoge.inputEnabled = true;
-        Room4.dialoge.events.onInputDown.add(Room4.delete1);
+        Room4.dialoge.events.onInputDown.add(Room4.delete2);
     },
     vent: function () {
         Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
@@ -231,7 +231,7 @@ var Room4 = {
         Room4.text1 = game.add.text(75, 40, '*Под потолком висит вытяжка, которая засасывает запахи.', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room4.text2 = game.add.text(75, 80, 'Вы решили попробовать пролезть через неё');
         Room4.dialoge.inputEnabled = true;
-        Room4.dialoge.events.onInputDown.add(Room4.delete1);
+        Room4.dialoge.events.onInputDown.add(Room4.delete2);
         Room4.dialoge.events.onInputDown.add(Room4.smell);
     },
     smell: function () {
@@ -240,7 +240,7 @@ var Room4 = {
         Room4.text1 = game.add.text(75, 40, '*Но Вы не запах...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room4.text2 = game.add.text(75, 80, '');
         Room4.dialoge.inputEnabled = true;
-        Room4.dialoge.events.onInputDown.add(Room4.delete1);
+        Room4.dialoge.events.onInputDown.add(Room4.delete2);
         Room4.dialoge.events.onInputDown.add(Room4.nothing2);
     },
     cooker: function () {
@@ -250,7 +250,7 @@ var Room4 = {
         Room4.text2 = game.add.text(75, 80, 'газопроводу, который отсутсвует в доме, но на ней всё же');
         Room4.text3 = game.add.text(75, 80, 'есть следы огня. Возможно, используется огненной магией...');
         Room4.dialoge.inputEnabled = true;
-        Room4.dialoge.events.onInputDown.add(Room4.delete1);
+        Room4.dialoge.events.onInputDown.add(Room4.delete2);
         Room4.dialoge.events.onInputDown.add(Room4.nothing1);
     },
     something: function () {
