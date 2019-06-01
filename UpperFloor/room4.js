@@ -48,25 +48,25 @@ var Room4 = {
         this.btn.width = 140
         this.btn.height = 65
         this.btn.inputEnabled = true;
-        this.btn.events.onInputDown.add(this.something);
+        this.btn.events.onInputDown.add(this.pans);
         
         this.btn = game.add.sprite(345, 255, 'trigger');
         this.btn.width = 160
         this.btn.height = 100
         this.btn.inputEnabled = true;
-        this.btn.events.onInputDown.add(this.something);
+        this.btn.events.onInputDown.add(this.shkaf);
         
         this.btn = game.add.sprite(465, 150, 'trigger');
         this.btn.width = 75
         this.btn.height = 75
         this.btn.inputEnabled = true;
-        this.btn.events.onInputDown.add(this.something);
+        this.btn.events.onInputDown.add(this.vent);
         
         this.btn = game.add.sprite(510, 240, 'trigger');
         this.btn.width = 95
         this.btn.height = 110
         this.btn.inputEnabled = true;
-        this.btn.events.onInputDown.add(this.something);
+        this.btn.events.onInputDown.add(this.cooker);
         
         this.btn = game.add.sprite(250, 360, 'trigger');
         this.btn.width = 90
@@ -159,6 +159,99 @@ var Room4 = {
         Room4.dialoge.inputEnabled = true;
         Room4.dialoge.events.onInputDown.add(Room4.delete1);
         Room4.dialoge.events.onInputDown.add(Room4.nothing2);
+    },
+    pans: function () {
+        Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Room4.dialoge.scale.setTo(1);
+        Room4.text1 = game.add.text(75, 40, '*Эти сковородки и две левые прихватики показались Вам весьма', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text2 = game.add.text(75, 80, 'подозрительно висящими на стене кухни...');
+        Room4.dialoge.inputEnabled = true;
+        Room4.dialoge.events.onInputDown.add(Room4.delete1);
+        Room4.dialoge.events.onInputDown.add(Room4.try);
+    },
+    try: function () {
+        Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Room4.dialoge.scale.setTo(1);
+        Room4.text1 = game.add.text(75, 40, '*Вы попытались дотянуться до них, впоследствии чего поняли что', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text2 = game.add.text(75, 80, 'недостаточно высоки для этого...');
+        Room4.dialoge.inputEnabled = true;
+        Room4.dialoge.events.onInputDown.add(Room4.delete1);
+        Room4.dialoge.events.onInputDown.add(Room4.nothing3);
+    },
+    shkaf: function () {
+        Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Room4.dialoge.scale.setTo(1);
+        Room4.text1 = game.add.text(75, 40, '*Похоже на то, что этот шкаф может иметь в себе кучу секретов...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text2 = game.add.text(75, 80, '');
+        Room4.dialoge.inputEnabled = true;
+        Room4.dialoge.events.onInputDown.add(Room4.delete1);
+        Room4.dialoge.events.onInputDown.add(Room4.polki);
+    },
+    polki: function () {
+        Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Room4.dialoge.scale.setTo(1);
+        Room4.text1 = game.add.text(75, 40, '*Вы открыли дверцы шкафа в поисках секретных выключателей...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text2 = game.add.text(75, 80, '*Вы выдвинули полки шкафа в поисках секретных приборов...');
+        Room4.text3 = game.add.text(75, 120, '*Вы проверили каждую пылинку на столешнице...');
+        Room4.text3 = game.add.text(75, 160, '*Ничего из этого не содержит секретов.....');
+        Room4.dialoge.inputEnabled = true;
+        Room4.dialoge.events.onInputDown.add(Room4.delete2);
+        Room4.dialoge.events.onInputDown.add(Room4.nothing);
+    },
+    nothing: function () {
+        Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Room4.dialoge.scale.setTo(1);
+        Room4.text1 = game.add.text(75, 40, '*Вы уж было собирались отойти от шкафа...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text2 = game.add.text(75, 80, '(*Внезапно, раздался какой-то скрежет*)');
+        Room4.text3 = game.add.text(75, 120, '*Похоже, что вы голодны...');
+        Room4.dialoge.inputEnabled = true;
+        Room4.dialoge.events.onInputDown.add(Room4.delete2);
+        Room4.dialoge.events.onInputDown.add(Room4.break);
+    },
+    break: function () {
+        Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Room4.dialoge.scale.setTo(1);
+        Room4.text1 = game.add.text(75, 40, '*Вы решли поискать немного пищи для мозга...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text2 = game.add.text(75, 80, '(*Найдены кусочки шоколада*)');
+        Room4.dialoge.inputEnabled = true;
+        Room4.dialoge.events.onInputDown.add(Room4.delete1);
+        Room4.dialoge.events.onInputDown.add(Room4.thing);
+    },
+    thing: function () {
+        Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Room4.dialoge.scale.setTo(1);
+        Room4.text1 = game.add.text(75, 40, '*Вы перекусили и чувствуете, что вам стало полегче...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text2 = game.add.text(75, 80, '(*Похоже, что это немного помогло...*)');
+        Room4.dialoge.inputEnabled = true;
+        Room4.dialoge.events.onInputDown.add(Room4.delete1);
+    },
+    vent: function () {
+        Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Room4.dialoge.scale.setTo(1);
+        Room4.text1 = game.add.text(75, 40, '*Под потолком висит вытяжка, которая засасывает запахи.', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text2 = game.add.text(75, 80, 'Вы решили попробовать пролезть через неё');
+        Room4.dialoge.inputEnabled = true;
+        Room4.dialoge.events.onInputDown.add(Room4.delete1);
+        Room4.dialoge.events.onInputDown.add(Room4.smell);
+    },
+    smell: function () {
+        Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Room4.dialoge.scale.setTo(1);
+        Room4.text1 = game.add.text(75, 40, '*Но Вы не запах...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text2 = game.add.text(75, 80, '');
+        Room4.dialoge.inputEnabled = true;
+        Room4.dialoge.events.onInputDown.add(Room4.delete1);
+        Room4.dialoge.events.onInputDown.add(Room4.nothing2);
+    },
+    cooker: function () {
+        Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Room4.dialoge.scale.setTo(1);
+        Room4.text1 = game.add.text(75, 40, '*Эта плита каким-то магическим образом не подключена к', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text2 = game.add.text(75, 80, 'газопроводу, который отсутсвует в доме, но на ней всё же');
+        Room4.text3 = game.add.text(75, 80, 'есть следы огня. Возможно, используется огненной магией...');
+        Room4.dialoge.inputEnabled = true;
+        Room4.dialoge.events.onInputDown.add(Room4.delete1);
+        Room4.dialoge.events.onInputDown.add(Room4.nothing1);
     },
     something: function () {
         Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
