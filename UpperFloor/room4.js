@@ -193,7 +193,7 @@ var Room4 = {
         Room4.text1 = game.add.text(75, 40, '*Вы открыли дверцы шкафа в поисках секретных выключателей...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room4.text2 = game.add.text(75, 80, '*Вы выдвинули полки шкафа в поисках секретных приборов...');
         Room4.text3 = game.add.text(75, 120, '*Вы проверили каждую пылинку на столешнице...');
-        Room4.text3 = game.add.text(75, 160, '*Ничего из этого не содержит секретов.....');
+        Room4.text4 = game.add.text(75, 160, '*Ничего из этого не содержит секретов.....');
         Room4.dialoge.inputEnabled = true;
         Room4.dialoge.events.onInputDown.add(Room4.delete2);
         Room4.dialoge.events.onInputDown.add(Room4.nothing);
@@ -280,9 +280,11 @@ var Room4 = {
         Room4.text1.kill();
         Room4.text2.kill();
         Room4.text3.kill();
+        Room4.text4.kill();
         Room4.dialoge.kill();
         Room4.text1.kill();
         Room4.text2.kill();
         Room4.text3.kill();
+        Room4.text4.kill();
     },
 }
