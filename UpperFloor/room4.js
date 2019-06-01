@@ -280,6 +280,15 @@ var Room4 = {
         Room4.text1.kill();
         Room4.text2.kill();
         Room4.text3.kill();
+        Room4.dialoge.kill();
+        Room4.text1.kill();
+        Room4.text2.kill();
+        Room4.text3.kill();
+    },delete2:function(){
+        Room4.dialoge.kill();
+        Room4.text1.kill();
+        Room4.text2.kill();
+        Room4.text3.kill();
         Room4.text4.kill();
         Room4.dialoge.kill();
         Room4.text1.kill();
