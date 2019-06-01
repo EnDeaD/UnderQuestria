@@ -190,10 +190,10 @@ var Room4 = {
     polki: function () {
         Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
         Room4.dialoge.scale.setTo(1);
-        Room4.text1 = game.add.text(75, 40, '*Вы открыли дверцы шкафа в поисках секретных выключателей...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-        Room4.text2 = game.add.text(75, 80, '*Вы выдвинули полки шкафа в поисках секретных приборов...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-        Room4.text3 = game.add.text(75, 120, '*Вы проверили каждую пылинку на столешнице...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-        Room4.text4 = game.add.text(75, 160, '*Ничего из этого не содержит секретов.....', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text1 = game.add.text(75, 30, '*Вы открыли дверцы шкафа в поисках секретных выключателей...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text2 = game.add.text(75, 70, '*Вы выдвинули полки шкафа в поисках секретных приборов...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text3 = game.add.text(75, 110, '*Вы проверили каждую пылинку на столешнице...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text4 = game.add.text(75, 150, '*Ничего из этого не содержит секретов.....', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room4.dialoge.inputEnabled = true;
         Room4.dialoge.events.onInputDown.add(Room4.delete3);
         Room4.dialoge.events.onInputDown.add(Room4.nothing);
