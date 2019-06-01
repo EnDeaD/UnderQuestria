@@ -163,7 +163,7 @@ var Room4 = {
     pans: function () {
         Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
         Room4.dialoge.scale.setTo(1);
-        Room4.text1 = game.add.text(75, 40, '*Эти сковородки и две левые прихватики показались Вам весьма', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text1 = game.add.text(75, 40, '*Эти две сковородки и две левые прихватики показались Вам весьма', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room4.text2 = game.add.text(75, 80, 'подозрительно висящими на стене кухни...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room4.dialoge.inputEnabled = true;
         Room4.dialoge.events.onInputDown.add(Room4.delete1);
@@ -172,8 +172,8 @@ var Room4 = {
     try: function () {
         Room4.dialoge = game.add.sprite(0, 0, 'dialoge');
         Room4.dialoge.scale.setTo(1);
-        Room4.text1 = game.add.text(75, 40, '*Вы попытались дотянуться до них, впоследствии чего поняли что', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-        Room4.text2 = game.add.text(75, 80, 'недостаточно высоки для этого...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text1 = game.add.text(75, 40, '*Вы попытались дотянуться до них, но через мгновение осознали, что', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text2 = game.add.text(75, 80, 'Вы недостаточно высоки для этого...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room4.dialoge.inputEnabled = true;
         Room4.dialoge.events.onInputDown.add(Room4.delete1);
         Room4.dialoge.events.onInputDown.add(Room4.nothing3);
