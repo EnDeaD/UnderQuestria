@@ -11,7 +11,8 @@ var TheEnd = {
     create: function() {
         this.dialoge = game.add.sprite(0, 10, 'dialoge');
         this.dialoge.scale.setTo(1, 2)
-        this.text0 = game.add.text(250, 125, 'КОНЕЦ.', { fontSize: '25px', fill: '#FFF', font: 'bold 20pt Sans' });
+        this.text0 = game.add.text(350, 225, 'КОНЕЦ', { fontSize: '75px', fill: '#FFF', font: 'bold 20pt Sans' });
+        
         game.input.onDown.add(this.clicked, this);
     },
     update: function() {
