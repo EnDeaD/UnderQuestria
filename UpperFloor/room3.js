@@ -1,6 +1,7 @@
 var Room3 = {
     preload: function () {
         game.load.image('trigger', 'triggers/shine.png');
+        game.load.image('ttrigger', 'triggers/test_trigger.png');
         game.load.image('htrigger', 'triggers/trigger.png');
         game.load.image('exitd', 'triggers/ardo.png');
         game.load.image('exitl', 'triggers/arle.png');
@@ -61,6 +62,24 @@ var Room3 = {
                 Room3.locker.kill();
             }
         }
+        
+        this.btn = game.add.sprite(160, 120, 'ttrigger');
+        this.btn.width = 25
+        this.btn.height = 95
+        this.btn.inputEnabled = true;
+        this.btn.events.onInputDown.add(this.flower);
+        
+        this.btn = game.add.sprite(155, 200, 'ttrigger');
+        this.btn.width = 90
+        this.btn.height = 115
+        this.btn.inputEnabled = true;
+        this.btn.events.onInputDown.add(this.table);
+        
+        this.btn = game.add.sprite(175, 265, 'ttrigger');
+        this.btn.width = 20
+        this.btn.height = 20
+        this.btn.inputEnabled = true;
+        this.btn.events.onInputDown.add(this.secret);
     },
     update: function () {
 
