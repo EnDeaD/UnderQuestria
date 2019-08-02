@@ -44,7 +44,7 @@ var Menu = {
         this.text = game.add.text(175, 560, '"UNDERTALE" & "MY LITTLE PONY" Сrossover (FAN-MADE)', { fontSize: '15px', fill: '#202020', font: 'bold 15pt Pixel' });
         this.text = game.add.text(200, 200, 'Home - Somewhere', { fontSize: '30px', fill: '#FFF', font: 'bold 30pt Pixel' });
         this.text = game.add.text(200, 150, 'July', { fontSize: '30px', fill: '#FFF', font: 'bold 30pt Pixel' });
-        this.text = game.add.text(375, 150, 'LV 0', { fontSize: '30px', fill: '#FFF', font: 'bold 30pt Pixel' });
+        this.text = game.add.text(375, 150, 'LV 1', { fontSize: '30px', fill: '#FFF', font: 'bold 30pt Pixel' });
         this.text = game.add.text(480, 150, '0:00', { fontSize: '30px', fill: '#FFF', font: 'bold 30pt Pixel' });
         
         this.word = game.add.sprite(10, 540, 'cade');
