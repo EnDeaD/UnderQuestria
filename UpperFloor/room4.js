@@ -248,7 +248,7 @@ var Room4 = {
         Room4.dialoge.scale.setTo(1);
         Room4.text1 = game.add.text(75, 40, '*Эта плита каким-то магическим образом не подключена к', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room4.text2 = game.add.text(75, 80, 'газопроводу, который отсутсвует в доме, но на ней всё же', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-        Room4.text3 = game.add.text(75, 80, 'есть следы огня. Возможно, используется огненной магией...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room4.text3 = game.add.text(75, 120, 'есть следы огня. Возможно, используется огненной магией...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room4.dialoge.inputEnabled = true;
         Room4.dialoge.events.onInputDown.add(Room4.delete2);
         Room4.dialoge.events.onInputDown.add(Room4.nothing1);
