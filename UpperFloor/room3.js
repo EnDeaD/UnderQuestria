@@ -63,9 +63,9 @@ var Room3 = {
             }
         }
         
-        this.btn = game.add.sprite(160, 120, 'ttrigger');
-        this.btn.width = 25
-        this.btn.height = 95
+        this.btn = game.add.sprite(160, 70, 'ttrigger');
+        this.btn.width = 55
+        this.btn.height = 65
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.flower);
         
@@ -84,12 +84,19 @@ var Room3 = {
     update: function () {
 
     },
-
+    flower:function(){
+        Room3.dialoge = game.add.sprite(0, 0, 'dialoge');
+        dialog = false;
+        Room3.dialoge.scale.setTo(1);
+        Room3.text1 = game.add.text(75, 40, '* Это Золотой Цветик... -_-', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room3.dialoge.inputEnabled = true;
+        Room3.dialoge.events.onInputDown.add(Room3.delete);
+    },
     massage:function(){
         Room3.dialoge = game.add.sprite(0, 0, 'dialoge');
         dialog = false;
         Room3.dialoge.scale.setTo(1);
-        Room3.text = game.add.text(75, 40, '* Похоже, что Вы еще не все осмотрели на этом этаже...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room3.text1 = game.add.text(75, 40, '* Похоже, что Вы еще не все осмотрели на этом этаже...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room3.dialoge.inputEnabled = true;
         Room3.dialoge.events.onInputDown.add(Room3.clicked);
     },
