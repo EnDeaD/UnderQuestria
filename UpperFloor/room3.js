@@ -63,15 +63,15 @@ var Room3 = {
             }
         }
         
-        this.btn = game.add.sprite(160, 70, 'ttrigger');
-        this.btn.width = 55
+        this.btn = game.add.sprite(105, 65, 'ttrigger');
+        this.btn.width = 50
         this.btn.height = 65
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.flower);
         
-        this.btn = game.add.sprite(155, 200, 'ttrigger');
-        this.btn.width = 90
-        this.btn.height = 115
+        this.btn = game.add.sprite(100, 130, 'ttrigger');
+        this.btn.width = 60
+        this.btn.height = 75
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.table);
         
@@ -85,6 +85,22 @@ var Room3 = {
 
     },
     flower:function(){
+        Room3.dialoge = game.add.sprite(0, 0, 'dialoge');
+        dialog = false;
+        Room3.dialoge.scale.setTo(1);
+        Room3.text1 = game.add.text(75, 40, '* Это Золотой Цветик... -_-', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room3.dialoge.inputEnabled = true;
+        Room3.dialoge.events.onInputDown.add(Room3.delete);
+    },
+    table:function(){
+        Room3.dialoge = game.add.sprite(0, 0, 'dialoge');
+        dialog = false;
+        Room3.dialoge.scale.setTo(1);
+        Room3.text1 = game.add.text(75, 40, '* Это Золотой Цветик... -_-', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
+        Room3.dialoge.inputEnabled = true;
+        Room3.dialoge.events.onInputDown.add(Room3.delete);
+    },
+    secret:function(){
         Room3.dialoge = game.add.sprite(0, 0, 'dialoge');
         dialog = false;
         Room3.dialoge.scale.setTo(1);
