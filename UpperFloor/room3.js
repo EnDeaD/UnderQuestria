@@ -75,9 +75,9 @@ var Room3 = {
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.table);
         
-        this.btn = game.add.sprite(120, 150, 'ttrigger');
-        this.btn.width = 20
-        this.btn.height = 20
+        this.btn = game.add.sprite(110, 130, 'ttrigger');
+        this.btn.width = 15
+        this.btn.height = 15
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.secret);
     },
@@ -107,6 +107,7 @@ var Room3 = {
         Room3.text1 = game.add.text(75, 40, '* Вы нашли секрет...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room3.text2 = game.add.text(75, 80, '(*"Семейное фото" будет добавлено в финальный экран.*)', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room3.dialoge.inputEnabled = true;
+        secret1 = true;
         Room3.dialoge.events.onInputDown.add(Room3.delete);
     },
     massage:function(){
