@@ -154,21 +154,16 @@ var Room3 = {
     delete:function(){
         Room3.dialoge.kill();
         Room3.text1.kill();
-        Room3.dialoge.kill();
-        Room3.text2.kill();
     },
     delete1:function(){
         Room3.dialoge.kill();
         Room3.text1.kill();
-        Room3.dialoge.kill();
         Room3.text2.kill();
     },
     delete2:function(){
         Room3.dialoge.kill();
         Room3.text1.kill();
-        Room3.dialoge.kill();
         Room3.text2.kill();
-        Room3.dialoge.kill();
         Room3.text3.kill();
     },
 }
