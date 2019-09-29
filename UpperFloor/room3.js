@@ -75,11 +75,11 @@ var Room3 = {
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.table);
         
-        this.btn1 = game.add.sprite(115, 170, 'trigger');
-        this.btn1.width = 15
-        this.btn1.height = 15
-        this.btn1.inputEnabled = true;
-        this.btn1.events.onInputDown.add(this.secret);
+        this.btn = game.add.sprite(115, 170, 'trigger');
+        this.btn.width = 15
+        this.btn.height = 15
+        this.btn.inputEnabled = true;
+        this.btn.events.onInputDown.add(this.secret);
     },
     update: function () {
 
@@ -109,7 +109,11 @@ var Room3 = {
         Room3.dialoge.inputEnabled = true;
         secret1 = true;
         Room3.dialoge.events.onInputDown.add(Room3.delete1);
-        this.btn1.kill();
+        this.btn = game.add.sprite(100, 130, 'trigger');
+        this.btn.width = 60
+        this.btn.height = 70
+        this.btn.inputEnabled = true;
+        this.btn.events.onInputDown.add(this.table);
     },
     massage:function(){
         Room3.dialoge = game.add.sprite(0, 0, 'dialoge');
