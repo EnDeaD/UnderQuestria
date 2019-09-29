@@ -108,7 +108,7 @@ var Room3 = {
         Room3.text2 = game.add.text(75, 80, '(*"Семейное фото" будет добавлено в финальный экран.*)', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room3.dialoge.inputEnabled = true;
         secret1 = true;
-        Room3.dialoge.events.onInputDown.add(Room3.delete);
+        Room3.dialoge.events.onInputDown.add(Room3.delete1);
     },
     massage:function(){
         Room3.dialoge = game.add.sprite(0, 0, 'dialoge');
@@ -155,6 +155,20 @@ var Room3 = {
         Room3.dialoge.kill();
         Room3.text1.kill();
         Room3.dialoge.kill();
+        Room3.text2.kill();
+    },
+    delete1:function(){
+        Room3.dialoge.kill();
         Room3.text1.kill();
+        Room3.dialoge.kill();
+        Room3.text2.kill();
+    },
+    delete2:function(){
+        Room3.dialoge.kill();
+        Room3.text1.kill();
+        Room3.dialoge.kill();
+        Room3.text2.kill();
+        Room3.dialoge.kill();
+        Room3.text3.kill();
     },
 }
