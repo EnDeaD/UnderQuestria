@@ -75,11 +75,11 @@ var Room3 = {
         this.btn.inputEnabled = true;
         this.btn.events.onInputDown.add(this.table);
         
-        this.btn = game.add.sprite(115, 170, 'ttrigger');
-        this.btn.width = 15
-        this.btn.height = 15
-        this.btn.inputEnabled = true;
-        this.btn.events.onInputDown.add(this.secret);
+        this.btn1 = game.add.sprite(115, 170, 'trigger');
+        this.btn1.width = 15
+        this.btn1.height = 15
+        this.btn1.inputEnabled = true;
+        this.btn1.events.onInputDown.add(this.secret);
     },
     update: function () {
 
@@ -109,6 +109,7 @@ var Room3 = {
         Room3.dialoge.inputEnabled = true;
         secret1 = true;
         Room3.dialoge.events.onInputDown.add(Room3.delete1);
+        this.btn1.kill();
     },
     massage:function(){
         Room3.dialoge = game.add.sprite(0, 0, 'dialoge');
@@ -116,7 +117,7 @@ var Room3 = {
         Room3.dialoge.scale.setTo(1);
         Room3.text1 = game.add.text(75, 40, '* Похоже, что Вы еще не все осмотрели на этом этаже...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
         Room3.dialoge.inputEnabled = true;
-        Room3.dialoge.events.onInputDown.add(Room3.clicked);
+        Room3.dialoge.events.onInputDown.add(Room3.delete);
     },
     nextRoom:function(){
         game.state.start('room4');
@@ -129,24 +130,12 @@ var Room3 = {
         Room3.dialoge.events.onInputDown.add(Room3.delete);
     },
     secondRoom:function(){
-        Room3.dialoge1 = game.add.sprite(0, 0, 'dialoge');
-        Room3.dialoge1.scale.setTo(1);
+        Room3.dialoge = game.add.sprite(0, 0, 'dialoge');
+        Room3.dialoge.scale.setTo(1);
         Room3.text1 = game.add.text(75, 40, '* Похоже, что за этой дверью просто стена...', { fontSize: '20px', fill: '#FFF', font: 'bold 20pt sans' });
-        Room3.dialoge1.inputEnabled = true;
-        Room3.dialoge1.events.onInputDown.add(Room3.clicked1);
+        Room3.dialoge.inputEnabled = true;
+        Room3.dialoge.events.onInputDown.add(Room3.delete);
         dialog = false;
-    },
-    clicked:function(){
-        Room3.dialoge.kill();
-        Room3.text.kill();
-        Room3.dialoge.kill();
-        Room3.text.kill();
-    },
-    clicked1:function(){
-        Room3.dialoge1.kill();
-        Room3.text1.kill();
-        Room3.dialoge1.kill();
-        Room3.text1.kill();
     },
     changeFloor:function(){
         game.state.start('ladder');
